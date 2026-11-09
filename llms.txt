@@ -1,0 +1,37 @@
+# Agla Consulting
+
+> Agla Consulting LLC helps small and midsize businesses turn more leads into paying customers by automating the Lead-to-Cash (L2C) lifecycle with practical AI. Based in the St. Louis, Missouri area; on-site within about 100 miles of St. Louis and remote nationwide. "Agla" is Hindi for "next."
+
+## What we do
+
+- **Lead-to-Cash (L2C) automation:** the full lifecycle from first inquiry to payment collected, in five stages:
+  1. Capture (Lead Management): AI answers calls, texts and web forms 24/7 and logs every lead in the CRM.
+  2. Qualify (Lead Conversion & Qualification): AI asks qualifying questions, scores leads, converts them to opportunities and books appointments.
+  3. Quote (CPQ: Configure, Price, Quote): the business's pricing rules generate professional proposals in minutes, with automatic follow-up.
+  4. Close (Contract & Order Management): e-signature and deposit requests, and accepted quotes become scheduled jobs or orders.
+  5. Collect (Billing & Collections): automatic invoices, payment links, reminders and accounting sync.
+- **Entry points:** Lead-to-Cash, Opportunity-to-Cash, Quote-to-Cash (Q2C) and Order-to-Cash engagements, starting at the stage where revenue leaks most.
+- **Supporting services:** agentic AI workflows, AI voice agents and cloud phone (VoIP), cloud infrastructure, security and access governance, managed IT and networking, fractional CTO and advisory.
+
+## How we work
+
+- Free 30-minute workflow review.
+- Fixed-scope engagements with outcome, timeline and price agreed up front; pilots measured in weeks.
+- Human review options so owners approve quotes and customer messages until they trust the system.
+- Clients own their data, accounts and workflows; no lock-in.
+- KPIs baselined and reported: speed to lead, lead-to-opportunity rate, quote turnaround, quote win rate and days to cash.
+
+## Who we serve
+
+Small and midsize businesses that rely on inbound leads and quotes: home services and trades, professional services, medical and dental offices, real estate and other service businesses.
+
+## Service area
+
+St. Louis City and County, St. Charles County, Jefferson County, Franklin County and the Illinois Metro East (on-site, within about 100 miles of St. Louis), plus remote engagements across the United States.
+
+## Contact
+
+- Website: https://aglaconsulting.com/
+- Phone: (636) 329-4961
+- Email: sales@aglaconsulting.com
+- Book a review: https://aglaconsulting.com/#contact
