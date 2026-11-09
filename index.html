@@ -124,6 +124,33 @@
 
     footer { padding: 32px 24px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.75rem; color: #64748b; }
 
+    /* ===== Light content theme: navy hero/nav/contact/footer, white & light-gray content ===== */
+    .services-section { background-color: #ffffff; border-top: 1px solid #e2e8f0; }
+    #paths, #services { background-color: #f8fafc; }
+    .section-title { color: #0f172a; }
+    .section-subtitle { color: #475569; }
+
+    .card, .stage, .path-card, .kpi { background-color: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px -12px rgba(15, 23, 42, 0.15); }
+    .card:hover { border-color: #2563eb; }
+    .icon-box { background-color: #eff6ff; color: #2563eb; }
+    .card h3, .stage h3, .path-card h3, .kpi h3 { color: #0f172a; }
+    .card p, .stage p, .path-card p, .kpi p { color: #475569; }
+
+    .stage { border-top: 3px solid #2563eb; }
+    .stage-num { color: #2563eb; }
+    .stage-tag { color: #1e3a8a; background-color: #eff6ff; border-color: #bfdbfe; }
+    .stage-label.leak { color: #b91c1c; }
+    .stage-label.fix { color: #1d4ed8; }
+    .l2c-note { color: #475569; }
+    .l2c-note strong { color: #0f172a; }
+
+    .path-card .path-span, .kpi .kpi-stage { color: #2563eb; }
+    .path-card .best-for { color: #334155; }
+    .path-card .best-for strong { color: #0f172a; }
+    .path-card.featured { border-color: #2563eb; box-shadow: 0 0 0 1px #2563eb, 0 12px 28px -12px rgba(37, 99, 235, 0.35); }
+
+    footer { color: #94a3b8; }
+
     @media (max-width: 900px) { .roi-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 768px) {
       .roi-grid { grid-template-columns: 1fr; }
@@ -237,7 +264,7 @@
     </section>
 
     <!-- Entry points -->
-    <section id="paths" class="services-section" style="background-color: transparent;">
+    <section id="paths" class="services-section">
       <h2 class="section-title">Start Where Revenue Leaks Most</h2>
       <p class="section-subtitle">You don't have to automate everything at once. We start at the stage costing you the most, then extend across the lifecycle.</p>
       <div class="path-grid">
@@ -302,7 +329,7 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="services-section" style="background-color: transparent;">
+    <section id="services" class="services-section">
       <h2 class="section-title">Everything Behind the Automation</h2>
       <p class="section-subtitle">AI drives the Lead-to-Cash lifecycle. Reliable infrastructure and sound governance keep it running.</p>
       <div class="grid">
