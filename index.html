@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agla Consulting | AI Lead-to-Estimate Automation, Cloud &amp; Phone Systems</title>
+  <title>Agla Consulting | AI Lead-to-Cash Automation, Cloud &amp; Phone Systems</title>
   
   <!-- Primary Meta Tags -->
   <meta name="description" content="Agla (Hindi for &quot;NEXT&quot;) helps growing service businesses answer every call, qualify every lead and send estimates fast with practical AI, backed by reliable cloud and phone infrastructure.">
@@ -42,9 +42,9 @@
 
     /* ROI & Efficiency Highlights Banner */
     .roi-section { max-width: 1200px; margin: 0 auto 80px; padding: 0 24px; }
-    .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)); border: 1px solid #334155; padding: 32px; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.4); }
+    .roi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)); border: 1px solid #334155; padding: 32px; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.4); }
     .roi-item { text-align: center; padding: 12px; }
-    .roi-value { font-size: 2.5rem; font-weight: 800; color: #3b82f6; line-height: 1.2; margin-bottom: 4px; }
+    .roi-value { font-size: 2rem; font-weight: 800; color: #3b82f6; line-height: 1.2; margin-bottom: 4px; }
     .roi-label { font-size: 1rem; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
     .roi-desc { font-size: 0.875rem; color: #94a3b8; }
 
@@ -75,7 +75,9 @@
 
     footer { padding: 32px 24px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.75rem; color: #64748b; }
 
+    @media (max-width: 900px) { .roi-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 768px) {
+      .roi-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.25rem; }
       .nav-links { display: none; }
       .contact-card { padding: 24px; }
@@ -102,12 +104,12 @@
     <section class="hero">
       <div class="badge">Agla (अगला) means &ldquo;next&rdquo; &middot; Practical AI for growing businesses</div>
       <h1>Never miss a call, a lead,<br><span>or an estimate again.</span></h1>
-      <p>Agla builds AI agents that answer your calls, qualify new leads, and send estimates in minutes, not days. They run on cloud and phone infrastructure designed by an engineer who has built and operated both at carrier scale.</p>
+      <p>Agla builds AI agents that answer your calls, qualify new leads, send quotes in minutes, and carry every opportunity through to payment. They run on reliable cloud and phone infrastructure built for businesses that can't afford downtime.</p>
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 40px; font-size: 0.9375rem; color: #cbd5e1;">
-        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ 25+ years in telecom &amp; cloud</span>
+        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Telecom &amp; cloud expertise</span>
         <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Fixed-scope pilots</span>
         <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ You own your systems</span>
-        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Built on AWS best practices</span>
+        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Built on cloud best practices</span>
       </div>
       <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
         <a href="#contact" class="btn-hero">Book a Free Workflow Review</a>
@@ -118,34 +120,39 @@
     <!-- Proof strip -->
     <section id="roi" class="roi-section">
       <div class="roi-grid">
-        <div class="roi-item"><div class="roi-value">Weeks</div><div class="roi-label">Not Quarters</div><div class="roi-desc">Scoped pilots that target one painful workflow and prove value before you commit further.</div></div>
-        <div class="roi-item"><div class="roi-value">Every Call</div><div class="roi-label">Answered &amp; Logged</div><div class="roi-desc">Voice and web leads are captured, qualified and routed to your CRM automatically.</div></div>
-        <div class="roi-item"><div class="roi-value">Since 2008</div><div class="roi-label">Hosted Phone Systems</div><div class="roi-desc">Founder co-built a managed Asterisk PBX business serving 20+ small businesses.</div></div>
-        <div class="roi-item"><div class="roi-value">Human in the Loop</div><div class="roi-label">You Stay in Control</div><div class="roi-desc">Estimates and customer messages can require your approval until you trust the system.</div></div>
+        <div class="roi-item"><div class="roi-value">Weeks</div><div class="roi-label">Not Quarters</div><div class="roi-desc">Scoped pilots target one painful workflow and prove value before you commit further.</div></div>
+        <div class="roi-item"><div class="roi-value">24 / 7</div><div class="roi-label">Lead Capture</div><div class="roi-desc">An AI agent answers calls and web inquiries any hour, so no lead waits until Monday.</div></div>
+        <div class="roi-item"><div class="roi-value">Minutes</div><div class="roi-label">To First Estimate</div><div class="roi-desc">Job details are collected and priced automatically, so customers hear back while they're still interested.</div></div>
+        <div class="roi-item"><div class="roi-value">Every Channel</div><div class="roi-label">Calls, Texts &amp; Web</div><div class="roi-desc">Phone, SMS and web-form leads flow into one organized pipeline.</div></div>
+        <div class="roi-item"><div class="roi-value">Your Rules</div><div class="roi-label">Your Pricing</div><div class="roi-desc">Estimates follow your pricing, service areas and scheduling rules, not a generic template.</div></div>
+        <div class="roi-item"><div class="roi-value">Human Review</div><div class="roi-label">You Stay in Control</div><div class="roi-desc">Estimates and customer messages can require your approval until you trust the system.</div></div>
+        <div class="roi-item"><div class="roi-value">Your Tools</div><div class="roi-label">CRM &amp; Calendar Automation</div><div class="roi-desc">Connects to the CRM, calendar and accounting tools you already use.</div></div>
+        <div class="roi-item"><div class="roi-value">Fixed Scope</div><div class="roi-label">Clear Pricing</div><div class="roi-desc">Every engagement starts with a defined outcome, timeline and price.</div></div>
+        <div class="roi-item"><div class="roi-value">You Own It</div><div class="roi-label">No Lock-In</div><div class="roi-desc">Your data, workflows and accounts stay yours, with documentation to match.</div></div>
       </div>
     </section>
 
     <!-- How it works -->
     <section id="how" class="services-section">
-      <h2 class="section-title">Lead-to-Estimate Automation</h2>
-      <p class="section-subtitle">Our flagship offering, built with and for home service businesses like cleaning and power washing.</p>
+      <h2 class="section-title">Inbound Lead-to-Cash Automation</h2>
+      <p class="section-subtitle">Our flagship offering: we improve, automate and optimize the path from a new inquiry to a paid invoice for small and midsize businesses.</p>
       <div class="grid">
         <article class="card">
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.52 5.52l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"></path></svg></div>
-          <h3>1. Capture</h3>
-          <p>An AI agent answers calls and web inquiries 24/7, collects the job details (address, size, service type, photos) and never lets a lead go cold.</p>
+          <h3>1. Capture &amp; Qualify</h3>
+          <p>AI agents answer calls, texts and web inquiries around the clock, gather the details you need to price the work, and route every lead to the right place so none go cold.</p>
         </article>
 
         <article class="card">
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
-          <h3>2. Qualify &amp; Estimate</h3>
-          <p>Your pricing rules are applied automatically to produce an accurate, professional estimate. Edge cases get flagged for you to review.</p>
+          <h3>2. Quote &amp; Book</h3>
+          <p>Your pricing and scheduling rules produce a professional quote in minutes. Follow-ups run automatically, accepted work lands on your calendar, and edge cases are flagged for your review.</p>
         </article>
 
         <article class="card">
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
-          <h3>3. Send &amp; Schedule</h3>
-          <p>The estimate goes out by text or email, follow-ups run on their own, and accepted jobs land on your calendar.</p>
+          <h3>3. Invoice &amp; Get Paid</h3>
+          <p>Completed work triggers invoicing, payment reminders and CRM updates, so revenue is collected faster with less manual paperwork.</p>
         </article>
 
       </div>
@@ -164,13 +171,13 @@
 
         <article class="card">
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg></div>
-          <h3>AI Voice &amp; Phone Systems</h3>
-          <p>Natural-sounding voice agents wired into hosted PBX and SIP trunking, with call routing, voicemail and CRM logging handled for you.</p>
+          <h3>AI Voice &amp; Cloud Phone (VoIP)</h3>
+          <p>Natural-sounding voice agents connected to your cloud PBX and VoIP lines, with call routing, voicemail and CRM logging handled for you.</p>
         </article>
 
         <article class="card">
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg></div>
-          <h3>Cloud Architecture on AWS</h3>
+          <h3>Cloud Infrastructure</h3>
           <p>Scalable, resilient infrastructure with automated deployments, designed around your size and budget rather than over-built.</p>
         </article>
 
@@ -202,8 +209,8 @@
       <div class="grid">
         <article class="card">
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
-          <h3>Enterprise experience, small-business pace</h3>
-          <p>Led large-scale telecom and cloud platform programs, and co-founded a managed telephony company in 2008. You get that rigor without enterprise overhead.</p>
+          <h3>Enterprise rigor, small-business pace</h3>
+          <p>Proven engineering practices for telecom, cloud and security, scaled to fit a growing business without the enterprise overhead.</p>
         </article>
 
         <article class="card">
@@ -234,9 +241,9 @@
             <label for="service">What do you want help with?</label>
             <select id="service" name="service" required>
               <option value="" disabled selected>Select an option...</option>
-              <option value="Lead-to-Estimate Automation">Lead-to-estimate automation</option>
-              <option value="AI Voice and Phone Systems">AI voice agent / phone system</option>
-              <option value="AWS Cloud">Cloud infrastructure</option>
+              <option value="Lead-to-Cash Automation">Inbound lead-to-cash automation</option>
+              <option value="AI Voice and Cloud Phone">AI voice agent / cloud phone (VoIP)</option>
+              <option value="Cloud Infrastructure">Cloud infrastructure</option>
               <option value="Security">Security &amp; access governance</option>
               <option value="Managed IT">Managed IT &amp; networking</option>
               <option value="Fractional CTO">Fractional CTO / advisory</option>
