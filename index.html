@@ -84,6 +84,13 @@
     .btn-submit:hover { background-color: #1d4ed8; }
     .direct-email { text-align: center; margin-top: 24px; font-size: 0.875rem; color: #64748b; }
     .direct-email a { color: #60a5fa; text-decoration: underline; }
+    .btn-submit:disabled { opacity: 0.6; cursor: wait; }
+    .contact-card .form-error { margin: 16px 0 0; color: #fca5a5; font-size: 0.875rem; text-align: center; }
+    .form-error a { color: #fca5a5; text-decoration: underline; }
+    .form-success { text-align: center; padding: 24px 0 8px; outline: none; }
+    .form-success .success-icon { width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 9999px; background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; font-size: 1.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .form-success h3 { font-size: 1.375rem; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
+    .contact-card .form-success p { margin-bottom: 0; }
 
     footer { padding: 32px 24px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.75rem; color: #64748b; }
 
@@ -245,7 +252,10 @@
       <div class="contact-card">
         <h2>Book a Free Workflow Review</h2>
         <p>30 minutes. Tell us where calls, leads or estimates slip through the cracks, and we'll show you what could be automated first.</p>
-        <form action="https://formspree.io/f/xbggnjvk" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xbggnjvk" method="POST">
+          <!-- Spam trap: hidden from people; bots that fill it are discarded by Formspree -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px;">
+          <input type="hidden" name="_subject" value="New workflow review request from aglaconsulting.com">
           <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required></div>
           <div class="form-group"><label for="email">Work Email</label><input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
           <div class="form-group"><label for="phone">Phone (optional)</label><input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel"></div>
@@ -264,7 +274,13 @@
           </div>
           <div class="form-group"><label for="message">What's slowing your business down?</label><textarea id="message" name="message" rows="4" placeholder="e.g. We miss calls while on jobs and quotes take two days..." required></textarea></div>
           <button type="submit" class="btn-submit">Request My Free Review</button>
+          <p id="form-error" class="form-error" role="alert" hidden>Something went wrong sending your request. Please try again or email <a href="mailto:sales@aglaconsulting.com">sales@aglaconsulting.com</a>.</p>
         </form>
+        <div id="form-success" class="form-success" role="status" tabindex="-1" hidden>
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h3>Thank you. Your request is in.</h3>
+          <p>We'll reach out within one business day to schedule your free workflow review.</p>
+        </div>
         <div class="direct-email">Or email directly: <a href="mailto:sales@aglaconsulting.com">sales@aglaconsulting.com</a></div>
       </div>
     </section>
@@ -274,5 +290,41 @@
     <img src="agla-footprint-logo-transparent.png" alt="Agla Consulting: Your next step in AI" width="360" height="127" loading="lazy" style="display: block; margin: 0 auto 16px; width: 360px; max-width: 80%; height: auto;">
     &copy; 2026 Agla Consulting LLC &middot; Practical AI, cloud &amp; communications for growing businesses.
   </footer>
+
+  <script>
+    // Submit the contact form to Formspree in the background and show an on-page
+    // thank-you message instead of redirecting to Formspree's hosted page.
+    // Without JavaScript, the form still posts normally as a fallback.
+    (function () {
+      var form = document.getElementById('contact-form');
+      var success = document.getElementById('form-success');
+      var error = document.getElementById('form-error');
+      var button = form.querySelector('button[type="submit"]');
+      var label = button.textContent;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        error.hidden = true;
+        button.disabled = true;
+        button.textContent = 'Sending...';
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(function (response) {
+          if (!response.ok) throw new Error('Formspree returned ' + response.status);
+          form.reset();
+          form.hidden = true;
+          success.hidden = false;
+          success.focus();
+        }).catch(function () {
+          error.hidden = false;
+          button.disabled = false;
+          button.textContent = label;
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
