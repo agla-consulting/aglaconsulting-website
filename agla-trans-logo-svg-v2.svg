@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 210" width="100%" height="100%">
+  <style>
+    .text-white { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 800; }
+    .text-blue { fill: #3b82f6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 800; }
+    .text-sub { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 900; letter-spacing: 0.02em; }
+  </style>
+
+  <!-- Centered Graphic Group (Transparent Background) -->
+  <g text-anchor="middle">
+    <!-- Main AGLA Brand Name (Size: 94px, Accent: #3b82f6) -->
+    <text x="275" y="82" font-size="94" class="text-white" letter-spacing="-0.02em">AG<tspan class="text-blue">LA</tspan></text>
+    
+    <!-- CONSULTING Sub-header (Size: 80px) -->
+    <text x="275" y="162" font-size="80" class="text-sub">CONSULTING</text>
+  </g>
+</svg>
