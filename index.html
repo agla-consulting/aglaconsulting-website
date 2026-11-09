@@ -3,23 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agla Consulting | AI Voice Gateways & Hosted PBX Architecture</title>
+  <title>Agla Consulting | Agentic AI Workflows, AWS Cloud & Managed Telephony</title>
   
   <!-- Primary Meta Tags -->
-  <meta name="description" content="Architecting hosted Asterisk PBX systems, real-time AI voice orchestration (Deepgram, OpenAI, Cartesia, Vapi), and scalable cloud UCaaS infrastructure.">
+  <meta name="description" content="Agla Consulting delivers Agentic AI workflows, autonomous lead-to-quote automation, AWS cloud architecture, zero-trust security governance, and enterprise hosted VoIP PBX.">
   <meta name="author" content="Agla Consulting LLC">
 
-  <!-- Open Graph / LinkedIn / Facebook -->
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aglaconsulting.com/">
-  <meta property="og:title" content="Agla Consulting | AI Voice Gateways & Hosted PBX Architecture">
-  <meta property="og:description" content="Architecting hosted Asterisk PBX systems, real-time AI voice orchestration, and scalable cloud UCaaS infrastructure.">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://aglaconsulting.com/">
-  <meta name="twitter:title" content="Agla Consulting | AI Voice Gateways & Hosted PBX Architecture">
-  <meta name="twitter:description" content="Architecting hosted Asterisk PBX systems, real-time AI voice orchestration, and scalable cloud UCaaS infrastructure.">
+  <meta property="og:title" content="Agla Consulting | Agentic AI Workflows & AWS Cloud Architecture">
+  <meta property="og:description" content="Automate business operations with Agentic AI, high-reliability AWS cloud infrastructure, zero-trust security governance, and hosted PBX telephony.">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,7 +22,7 @@
     a { color: inherit; text-decoration: none; }
     
     /* Navigation */
-    nav { position: fixed; top: 0; left: 0; right: 0; height: 64px; background-color: rgba(15, 23, 42, 0.9); backdrop-filter: blur(8px); border-bottom: 1px solid #1e293b; z-index: 50; }
+    nav { position: fixed; top: 0; left: 0; right: 0; height: 64px; background-color: rgba(15, 23, 42, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #1e293b; z-index: 50; }
     .nav-container { max-width: 1200px; margin: 0 auto; height: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
     .brand { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.025em; color: #ffffff; }
     .brand span { color: #3b82f6; }
@@ -38,31 +32,53 @@
     .btn-nav:hover { background-color: #1d4ed8; }
 
     /* Hero */
-    .hero { padding-top: 140px; padding-bottom: 80px; padding-left: 24px; padding-right: 24px; max-width: 1200px; margin: 0 auto; text-align: center; }
+    .hero { padding-top: 140px; padding-bottom: 60px; padding-left: 24px; padding-right: 24px; max-width: 1200px; margin: 0 auto; text-align: center; }
+    .badge { display: inline-block; background-color: rgba(59, 130, 246, 0.1); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); font-size: 0.875rem; font-weight: 600; padding: 4px 14px; border-radius: 9999px; margin-bottom: 20px; }
     .hero h1 { font-size: 3rem; font-weight: 800; color: #ffffff; line-height: 1.15; margin-bottom: 24px; letter-spacing: -0.025em; }
     .hero h1 span { color: #3b82f6; }
-    .hero p { font-size: 1.25rem; color: #94a3b8; max-width: 768px; margin: 0 auto 40px; line-height: 1.6; }
+    .hero p { font-size: 1.25rem; color: #94a3b8; max-width: 820px; margin: 0 auto 40px; line-height: 1.6; }
     .btn-hero { display: inline-block; background-color: #2563eb; color: #ffffff; font-weight: 600; padding: 14px 28px; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); transition: background-color 0.2s; }
     .btn-hero:hover { background-color: #1d4ed8; }
 
+    /* ROI & Efficiency Highlights Banner */
+    .roi-section { max-width: 1200px; margin: 0 auto 80px; padding: 0 24px; }
+    .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)); border: 1px solid #334155; padding: 32px; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.4); }
+    .roi-item { text-align: center; padding: 12px; }
+    .roi-value { font-size: 2.5rem; font-weight: 800; color: #3b82f6; line-height: 1.2; margin-bottom: 4px; }
+    .roi-label { font-size: 1rem; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
+    .roi-desc { font-size: 0.875rem; color: #94a3b8; }
+
     /* Services Grid */
     .services-section { padding: 80px 24px; background-color: rgba(30, 41, 59, 0.5); border-top: 1px solid #1e293b; }
-    .section-title { font-size: 1.875rem; font-weight: 700; text-align: center; color: #ffffff; margin-bottom: 48px; }
-    .grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
-    .card { background-color: #1e293b; border: 1px solid #334155; padding: 32px; border-radius: 12px; }
+    .section-title { font-size: 2rem; font-weight: 700; text-align: center; color: #ffffff; margin-bottom: 12px; }
+    .section-subtitle { font-size: 1rem; color: #94a3b8; text-align: center; margin-bottom: 48px; }
+    .grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+    .card { background-color: #1e293b; border: 1px solid #334155; padding: 32px; border-radius: 12px; transition: transform 0.2s, border-color 0.2s; }
+    .card:hover { transform: translateY(-4px); border-color: #3b82f6; }
+    .icon-box { width: 48px; height: 48px; background-color: rgba(59, 130, 246, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #60a5fa; }
     .card h3 { font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; }
-    .card p { color: #94a3b8; font-size: 0.875rem; line-height: 1.6; }
+    .card p { color: #94a3b8; font-size: 0.9375rem; line-height: 1.6; }
 
-    /* Contact & Footer */
-    .contact-section { padding: 80px 24px; max-width: 768px; margin: 0 auto; text-align: center; }
-    .contact-section h2 { font-size: 1.875rem; font-weight: 700; color: #ffffff; margin-bottom: 16px; }
-    .contact-section p { color: #94a3b8; margin-bottom: 32px; }
-    .email-link { color: #60a5fa; font-weight: 500; font-size: 1.125rem; text-decoration: underline; }
+    /* Contact Form Section */
+    .contact-section { padding: 80px 24px; max-width: 640px; margin: 0 auto; }
+    .contact-card { background-color: #1e293b; border: 1px solid #334155; padding: 40px; border-radius: 16px; }
+    .contact-card h2 { font-size: 1.75rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; text-align: center; }
+    .contact-card p { color: #94a3b8; font-size: 0.9375rem; margin-bottom: 32px; text-align: center; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.875rem; font-weight: 600; color: #cbd5e1; margin-bottom: 8px; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #ffffff; font-size: 0.9375rem; outline: none; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: #3b82f6; }
+    .btn-submit { width: 100%; background-color: #2563eb; color: #ffffff; font-weight: 600; padding: 14px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; transition: background-color 0.2s; }
+    .btn-submit:hover { background-color: #1d4ed8; }
+    .direct-email { text-align: center; margin-top: 24px; font-size: 0.875rem; color: #64748b; }
+    .direct-email a { color: #60a5fa; text-decoration: underline; }
+
     footer { padding: 32px 24px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.75rem; color: #64748b; }
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.25rem; }
       .nav-links { display: none; }
+      .contact-card { padding: 24px; }
     }
   </style>
 </head>
@@ -71,41 +87,160 @@
     <div class="nav-container">
       <a href="#" class="brand">AGLA <span>CONSULTING</span></a>
       <div class="nav-links">
+        <a href="#roi">ROI & Impact</a>
         <a href="#services">Services</a>
-        <a href="#contact" class="btn-nav">Get in Touch</a>
+        <a href="#contact" class="btn-nav">Schedule Consultation</a>
       </div>
     </div>
   </nav>
 
   <main>
+<!-- Hero Section: SMB Business Value Proposition -->
     <section class="hero">
-      <h1>Enterprise Cloud Voice &<br><span>AI Voice Gateways</span></h1>
-      <p>Architecting hosted Asterisk PBX systems, real-time AI voice orchestration, and scalable cloud UCaaS infrastructure for small and medium businesses.</p>
-      <a href="#contact" class="btn-hero">Schedule Architecture Review</a>
+      <div class="badge">Your Trusted Enterprise Technology Partner</div>
+      <h1>Accelerate Business Growth & <br><span>Automate Operational Overhead</span></h1>
+      <p>We empower growing businesses to scale efficiently by deploying <strong>Agentic AI workflows</strong>, high-reliability <strong>AWS cloud infrastructure</strong>, and enterprise-grade <strong>security governance</strong>. Stop losing time to manual tasks and legacy IT headaches—let’s build a modern, automated foundation that drives measurable bottom-line ROI.</p>
+      
+      <!-- Strategic Business Value Pills -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 40px; font-size: 0.9375rem; color: #cbd5e1;">
+        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Reduce Operational Payroll Costs</span>
+        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Eliminate Missed Sales Leads</span>
+        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ 99.99% Cloud Uptime Guaranteed</span>
+        <span style="background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; padding: 6px 16px; border-radius: 9999px;">✓ Enterprise Security Protection</span>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="#contact" class="btn-hero">Schedule Business IT Review</a>
+        <a href="#roi" style="display: inline-block; background-color: transparent; color: #ffffff; border: 1px solid #334155; font-weight: 600; padding: 14px 28px; border-radius: 8px; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#1e293b'" onmouseout="this.style.backgroundColor='transparent'">See Value & ROI Metrics</a>
+      </div>
     </section>
 
+    <!-- ROI & Efficiency Metrics -->
+    <section id="roi" class="roi-section">
+      <div class="roi-grid">
+        <div class="roi-item">
+          <div class="roi-value">70%+</div>
+          <div class="roi-label">Overhead Reduction</div>
+          <div class="roi-desc">Automate repetitive lead parsing, scheduling, and quoting with autonomous AI agents.</div>
+        </div>
+        <div class="roi-item">
+          <div class="roi-value">&lt; 1 sec</div>
+          <div class="roi-label">Agent Latency</div>
+          <div class="roi-desc">Real-time voice agent orchestration powered by Deepgram, Cartesia, and OpenAI.</div>
+        </div>
+        <div class="roi-item">
+          <div class="roi-value">99.99%</div>
+          <div class="roi-label">Uptime Reliability</div>
+          <div class="roi-desc">Multi-region AWS cloud deployments and failover Asterisk SIP trunking architectures.</div>
+        </div>
+        <div class="roi-item">
+          <div class="roi-value">24 / 7</div>
+          <div class="roi-label">Zero-Trust Security</div>
+          <div class="roi-desc">Continuous vulnerability monitoring, IAM governance, and automated incident mitigation.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
     <section id="services" class="services-section">
-      <h2 class="section-title">Core Capabilities</h2>
+      <h2 class="section-title">Enterprise Capabilities</h2>
+      <p class="section-subtitle">Cutting-edge Agentic AI, secure cloud engineering, and high-availability operations.</p>
+      
       <div class="grid">
+        <!-- Service 1: Agentic AI Workflows -->
         <article class="card">
-          <h3>Hosted Asterisk PBX</h3>
-          <p>Resilient, high-availability hosted VoIP architectures engineered for multi-site business telephony and custom SIP trunking.</p>
+          <div class="icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3>Agentic AI Workflows</h3>
+          <p>Deploy autonomous multi-agent pipelines (Estimator, Scheduler, QA) that execute complex tasks end-to-end, replacing manual data entry and speeding lead conversion times.</p>
         </article>
+
+        <!-- Service 2: Real-Time AI Voice Gateways -->
         <article class="card">
-          <h3>AI Voice Gateways</h3>
-          <p>Seamless integration of ultra-low latency voice agents utilizing Deepgram, OpenAI, Cartesia, and Vapi platforms.</p>
+          <div class="icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+          </div>
+          <h3>AI Voice Gateways & Telephony</h3>
+          <p>Integrate low-latency voice agents directly into hosted Asterisk PBX systems. Seamlessly connect Vapi, Deepgram, and Cartesia with CRM backend integrations.</p>
         </article>
+
+        <!-- Service 3: AWS Cloud Architecture -->
         <article class="card">
-          <h3>Managed IT & UCaaS</h3>
-          <p>End-to-end unified communications, workflow automation, and infrastructure governance built for high-growth teams.</p>
+          <div class="icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+          </div>
+          <h3>AWS Cloud Architecture & Reliability</h3>
+          <p>Design fault-tolerant, scalable cloud infrastructure on AWS. Utilizing ECS, Kubernetes, serverless API gateways, and automated CI/CD pipeline deployments.</p>
+        </article>
+
+        <!-- Service 4: Security Governance & Risk -->
+        <article class="card">
+          <div class="icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Zero-Trust Security Governance</h3>
+          <p>Enforce strict IAM policies, vulnerability release governance, endpoint protection, and incident response frameworks to protect critical business assets.</p>
+        </article>
+
+        <!-- Service 5: Managed IT & Networking -->
+        <article class="card">
+          <div class="icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </div>
+          <h3>Managed IT Infrastructure</h3>
+          <p>Enterprise network engineering, SD-WAN, firewall policies, VLAN segmentation, and end-to-end unified communications built for reliable business growth.</p>
+        </article>
+
+        <!-- Service 6: Fractional Technology Advisory -->
+        <article class="card">
+          <div class="icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z"></path></svg>
+          </div>
+          <h3>Fractional CTO & Advisory</h3>
+          <p>Executive technology leadership, vendor negotiations, ROI modeling, and strategic roadmap planning to align IT spend with bottom-line performance.</p>
         </article>
       </div>
     </section>
 
+    <!-- Lead Generation Form -->
     <section id="contact" class="contact-section">
-      <h2>Ready to Modernize Your Voice Stack?</h2>
-      <p>Direct engineering leadership for telecommunications and AI gateway deployments.</p>
-      <a href="mailto:sales@aglaconsulting.com" class="email-link">sales@aglaconsulting.com</a>
+      <div class="contact-card">
+        <h2>Schedule an Architecture Review</h2>
+        <p>Discover how Agentic AI automation and resilient AWS architecture can optimize your business operations.</p>
+        
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Primary Area of Interest</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select an option...</option>
+              <option value="Agentic AI Workflows">Agentic AI & Lead Automation</option>
+              <option value="AI Voice Gateways">AI Voice & PBX Telephony</option>
+              <option value="AWS Cloud & Reliability">AWS Cloud Infrastructure & Uptime</option>
+              <option value="Security Governance">Zero-Trust Security & Compliance</option>
+              <option value="Managed IT Services">Managed IT & Networking</option>
+              <option value="Fractional CTO">Executive Technology Advisory</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Scope</label>
+            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your objectives or manual workflow bottlenecks..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Submit Inquiry</button>
+        </form>
+
+        <div class="direct-email">
+          Or email directly: <a href="mailto:sales@aglaconsulting.com">sales@aglaconsulting.com</a>
+        </div>
+      </div>
     </section>
   </main>
 
