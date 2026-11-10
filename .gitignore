@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Local drafts and source files that should never be published
+*-preview.html
+*.pdf
+*.psd
+*.zip

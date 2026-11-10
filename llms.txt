@@ -2,6 +2,10 @@
 
 > Agla Consulting LLC helps small and midsize businesses turn more leads into paying customers by automating the Lead-to-Cash (L2C) lifecycle with practical AI. Based in the St. Louis, Missouri area; on-site within about 100 miles of St. Louis and remote nationwide. "Agla" is Hindi for "next."
 
+## Who you work with
+
+Founder & Principal Consultant: Steve Heienickle (https://www.linkedin.com/in/steveheienickle). 25+ years building order-to-cash, ordering and provisioning systems, most recently as a vice president of software development at a Fortune 100 telecommunications company; co-founded Connected Consulting Services, a small-business phone company, in 2008. Clients work with him directly.
+
 ## What we do
 
 - **Lead-to-Cash (L2C) automation:** the full lifecycle from first inquiry to payment collected, in five stages:
