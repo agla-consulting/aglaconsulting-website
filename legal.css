@@ -1,0 +1,53 @@
+/* Shared styles for Agla Consulting legal pages (privacy.html, terms.html).
+   Matches the main site: navy nav/footer, white content, royal blue accents. */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; color: #334155; line-height: 1.7; }
+a { color: #2563eb; }
+a:hover { color: #1d4ed8; }
+a:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; border-radius: 2px; }
+
+.skip-link { position: absolute; left: -9999px; top: 8px; background: #ffffff; color: #0f172a; padding: 8px 12px; border-radius: 6px; z-index: 100; }
+.skip-link:focus { left: 8px; }
+
+/* Navigation */
+nav[aria-label="Main Navigation"] { position: fixed; top: 0; left: 0; right: 0; height: 64px; background-color: rgba(15, 23, 42, 0.97); border-bottom: 1px solid #1e293b; z-index: 50; }
+.nav-container { max-width: 1200px; margin: 0 auto; height: 100%; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; }
+.brand img { height: 52px; width: auto; }
+.btn-nav { background-color: #2563eb; color: #ffffff; padding: 8px 16px; border-radius: 8px; font-size: 0.875rem; font-weight: 600; text-decoration: none; }
+.btn-nav:hover { background-color: #1d4ed8; color: #ffffff; }
+
+/* Content */
+.legal { max-width: 820px; margin: 0 auto; padding: 112px 24px 72px; }
+.crumb { font-size: 0.875rem; color: #64748b; margin-bottom: 16px; }
+.crumb a { color: #64748b; }
+.legal h1 { font-size: 2.25rem; line-height: 1.2; font-weight: 800; color: #0f172a; letter-spacing: -0.02em; margin-bottom: 8px; }
+.updated { font-size: 0.9375rem; color: #64748b; margin-bottom: 32px; }
+.legal h2 { font-size: 1.375rem; font-weight: 700; color: #0f172a; margin: 40px 0 12px; padding-top: 8px; border-top: 1px solid #e2e8f0; }
+.legal h3 { font-size: 1.0625rem; font-weight: 700; color: #0f172a; margin: 20px 0 8px; }
+.legal p { margin-bottom: 14px; }
+.legal ul, .legal ol { margin: 0 0 16px 24px; }
+.legal li { margin-bottom: 8px; }
+.legal strong { color: #0f172a; }
+.notice { background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px 20px; margin: 20px 0; color: #1e3a8a; }
+.notice strong { color: #1e3a8a; }
+
+.toc { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; margin: 24px 0 8px; }
+.toc-title { font-weight: 700; color: #0f172a; margin-bottom: 8px !important; }
+.toc ol { margin-bottom: 0; columns: 2; column-gap: 32px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+
+/* Footer */
+footer { background-color: #0f172a; color: #94a3b8; text-align: center; font-size: 0.8125rem; padding: 32px 24px; }
+footer p { margin-bottom: 8px; }
+footer a { color: #cbd5e1; }
+footer a:hover { color: #ffffff; }
+
+@media (max-width: 640px) {
+  .legal { padding-top: 96px; }
+  .legal h1 { font-size: 1.875rem; }
+  .toc ol { columns: 1; }
+  .btn-nav { padding: 8px 12px; font-size: 0.8125rem; }
+  .brand img { height: 44px; }
+}
