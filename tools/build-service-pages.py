@@ -318,8 +318,8 @@ def render(p):
   <meta name="description" content="{html.escape(p['description'])}">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="{url}">
-  <link rel="icon" href="favicon.ico?v=2" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+  <link rel="icon" href="favicon.ico?v=3" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=3">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
   <meta name="theme-color" content="#0f172a">
   <meta property="og:type" content="website">
