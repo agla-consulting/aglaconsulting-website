@@ -1,0 +1,4 @@
+# GitHub Pages (Jekyll) settings
+# Keep maintenance scripts out of the published website.
+exclude:
+  - tools
