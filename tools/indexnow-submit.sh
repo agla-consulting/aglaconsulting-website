@@ -48,18 +48,18 @@ print(json.dumps({"host": host, "key": key, "keyLocation": loc, "urlList": sys.a
 echo "Submitting ${#urls} URL(s) to IndexNow:"
 printf '  %s\n' "${urls[@]}"
 
-status="$(curl -sS -o /tmp/indexnow-response.txt -w '%{http_code}' \
+http_status="$(curl -sS -o /tmp/indexnow-response.txt -w '%{http_code}' \
   -X POST "$ENDPOINT" \
   -H 'Content-Type: application/json; charset=utf-8' \
   --data "$payload")"
 
-case "$status" in
-  200|202) echo "Accepted (HTTP $status). Bing should re-crawl shortly." ;;
+case "$http_status" in
+  200|202) echo "Accepted (HTTP $http_status). Bing should re-crawl shortly." ;;
   400) echo "HTTP 400: bad request (check URL format)." >&2 ;;
   403) echo "HTTP 403: key not valid (key file missing or mismatched)." >&2 ;;
   422) echo "HTTP 422: URLs don't belong to $HOST or key doesn't match." >&2 ;;
   429) echo "HTTP 429: too many requests, try again later." >&2 ;;
-  *)   echo "Unexpected HTTP $status:" >&2; cat /tmp/indexnow-response.txt >&2 ;;
+  *)   echo "Unexpected HTTP $http_status:" >&2; cat /tmp/indexnow-response.txt >&2 ;;
 esac
 rm -f /tmp/indexnow-response.txt
-[[ "$status" == 200 || "$status" == 202 ]]
+[[ "$http_status" == 200 || "$http_status" == 202 ]]
