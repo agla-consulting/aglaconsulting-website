@@ -462,8 +462,8 @@
     .service-area strong { color: #0f172a; }
 
     /* Who you'll work with */
-    #team { background-color: #f8fafc; }
-    #faq { background-color: #ffffff; }
+    #team { background-color: #ffffff; }
+    #faq { background-color: #f8fafc; }
     .team-card { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: 280px 1fr; gap: 48px; align-items: start; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 40px; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 12px 32px -16px rgba(15, 23, 42, 0.18); }
     .team-photo { width: 240px; height: 240px; border-radius: 9999px; overflow: hidden; margin: 0 auto 20px; background: linear-gradient(135deg, #1e3a8a, #0f172a); display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 4rem; font-weight: 800; letter-spacing: 0.02em; border: 4px solid #ffffff; box-shadow: 0 0 0 1px #e2e8f0, 0 12px 24px -12px rgba(15, 23, 42, 0.35); }
     .team-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -494,9 +494,27 @@
       .team-promises { grid-template-columns: 1fr; }
     }
 
+    /* How engagements work */
+    #process { background-color: #f8fafc; }
+    .process-steps { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; list-style: none; padding: 0; counter-reset: step; }
+    .process-step { position: relative; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px 22px 24px; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px -12px rgba(15, 23, 42, 0.15); display: flex; flex-direction: column; }
+    .process-num { width: 40px; height: 40px; border-radius: 9999px; background-color: #2563eb; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .process-step h3 { font-size: 1.125rem; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
+    .process-when { font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #2563eb; margin-bottom: 12px; }
+    .process-step p { font-size: 0.9375rem; color: #475569; line-height: 1.6; margin-bottom: 14px; }
+    .process-out { margin-top: auto; padding-top: 14px; border-top: 1px solid #e2e8f0; font-size: 0.875rem; color: #334155; line-height: 1.5; }
+    .process-out strong { color: #0f172a; }
+    .process-cta { text-align: center; margin-top: 36px; }
+    .process-cta p { color: #475569; margin-bottom: 16px; }
+    .process-cta .btn-hero { color: #ffffff; }
+    @media (max-width: 1024px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .process-steps { grid-template-columns: 1fr; } }
+    .learn-more { display: inline-block; margin-top: 12px; font-weight: 600; color: #2563eb; text-decoration: underline; text-underline-offset: 2px; }
+    .learn-more:hover { color: #1d4ed8; }
+
     @media (max-width: 900px) { .roi-grid { grid-template-columns: repeat(2, 1fr); } }
     /* Collapse nav into the menu button before the links get crowded */
-    @media (max-width: 1024px) {
+    @media (max-width: 1180px) {
       .nav-right { gap: 12px; }
       .menu-toggle { display: inline-flex; }
       .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 24px 20px; background-color: #0f172a; border-bottom: 1px solid #1e293b; box-shadow: 0 16px 24px -8px rgba(0, 0, 0, 0.5); }
@@ -526,6 +544,7 @@
         <div class="nav-links" id="primary-menu">
           <a href="#l2c">Lead-to-Cash</a>
           <a href="#services">Services</a>
+          <a href="#process">How It Works</a>
           <a href="#team">About</a>
           <a href="#faq">FAQ</a>
           <a href="#contact" class="btn-nav">Book a Free Workflow Review</a>
@@ -585,6 +604,7 @@
           <p>Missed calls, slow replies and inquiries buried in inboxes. Most buyers go with whoever responds first.</p>
           <div class="stage-label fix">What we automate</div>
           <p>AI answers calls, texts and web forms 24/7, responds in seconds, and logs every lead in your CRM with its source.</p>
+          <a class="learn-more" href="ai-lead-capture.html">Learn more about AI lead capture<span class="visually-hidden"> and call answering</span></a>
         </article>
         <article class="stage">
           <div class="stage-num">Stage 2</div>
@@ -603,6 +623,7 @@
           <p>Quotes take days, pricing varies by who wrote it, and nobody follows up.</p>
           <div class="stage-label fix">What we automate</div>
           <p>Your pricing and discount rules generate a professional proposal in minutes, with automatic follow-ups until you get a yes or no.</p>
+          <a class="learn-more" href="quote-automation.html">Learn more<span class="visually-hidden"> about quote and proposal automation</span></a>
         </article>
         <article class="stage">
           <div class="stage-num">Stage 4</div>
@@ -612,6 +633,7 @@
           <p>Approved quotes stall waiting on signatures, deposits or scheduling.</p>
           <div class="stage-label fix">What we automate</div>
           <p>E-signature and deposit requests go out automatically, and accepted quotes become scheduled jobs or orders.</p>
+          <a class="learn-more" href="quote-automation.html">Learn more<span class="visually-hidden"> about closing and e-signature automation</span></a>
         </article>
         <article class="stage">
           <div class="stage-num">Stage 5</div>
@@ -621,6 +643,7 @@
           <p>Invoices go out late and someone spends hours chasing payments.</p>
           <div class="stage-label fix">What we automate</div>
           <p>Completed work triggers the invoice and a payment link, reminders run on their own, and payments sync to your accounting.</p>
+          <a class="learn-more" href="invoice-automation.html">Learn more<span class="visually-hidden"> about invoicing and payment collection</span></a>
         </article>
       </div>
       <p class="l2c-note"><strong>One connected system, not five disconnected tools.</strong> Each stage hands off to the next automatically, so nothing waits on a sticky note, an inbox or a busy owner.</p>
@@ -706,6 +729,7 @@
           <div class="icon-box"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg></div>
           <h3>AI Voice &amp; Cloud Phone (VoIP)</h3>
           <p>Natural-sounding voice agents connected to your cloud PBX and VoIP lines, with call routing, voicemail and CRM logging handled for you.</p>
+          <a class="learn-more" href="ai-lead-capture.html">Learn more<span class="visually-hidden"> about AI call answering and lead capture</span></a>
         </article>
 
         <article class="card">
@@ -760,6 +784,46 @@
 
       </div>
           <p class="service-area"><strong>Where we work:</strong> On-site within about 100 miles of St. Louis, including St. Louis City and County, St. Charles County, Jefferson County, Franklin County and the Illinois Metro East. Remote engagements for businesses nationwide.</p>
+    </section>
+
+    <!-- How engagements work -->
+    <section id="process" class="services-section" aria-labelledby="process-title">
+      <h2 class="section-title" id="process-title">How Engagements Work</h2>
+      <p class="section-subtitle">Start small, prove the results, then grow. You decide whether to move forward at every step.</p>
+      <ol class="process-steps">
+        <li class="process-step">
+          <div class="process-num" aria-hidden="true">1</div>
+          <h3><span class="visually-hidden">Step 1: </span>Free workflow review</h3>
+          <p class="process-when">30 minutes · free</p>
+          <p>We walk through how a lead becomes a paying customer in your business today and find where calls, quotes or payments slip through the cracks.</p>
+          <p class="process-out"><strong>You get:</strong> A plain-English recommendation for what to automate first, with no obligation.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num" aria-hidden="true">2</div>
+          <h3><span class="visually-hidden">Step 2: </span>Fixed-scope pilot</h3>
+          <p class="process-when">Typically a few weeks</p>
+          <p>We automate the one workflow costing you the most and run it side by side with your team, so you can compare results before anything reaches customers.</p>
+          <p class="process-out"><strong>You get:</strong> Baseline and pilot results on the metrics you care about, at a price agreed up front.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num" aria-hidden="true">3</div>
+          <h3><span class="visually-hidden">Step 3: </span>Build &amp; launch</h3>
+          <p class="process-when">After you approve the pilot</p>
+          <p>We connect your CRM, phone, calendar and accounting tools, set the approval steps you want, and train your team on the new workflow.</p>
+          <p class="process-out"><strong>You get:</strong> A live, documented workflow running on accounts you own.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num" aria-hidden="true">4</div>
+          <h3><span class="visually-hidden">Step 4: </span>Manage &amp; improve</h3>
+          <p class="process-when">Optional monthly support</p>
+          <p>We monitor the automation, tune it as your business changes, and extend it to the next stage of your Lead-to-Cash lifecycle when you're ready.</p>
+          <p class="process-out"><strong>You get:</strong> A monthly report on speed to lead, quote turnaround, win rate and days to cash.</p>
+        </li>
+      </ol>
+      <div class="process-cta">
+        <p>Every engagement starts with step one, and it's free.</p>
+        <a href="#contact" class="btn-hero">Book a Free Workflow Review</a>
+      </div>
     </section>
 
     <!-- Who you'll work with -->
@@ -884,6 +948,7 @@
     <p style="margin-bottom: 8px;">St. Louis-based &middot; On-site within 100 miles &middot; Remote nationwide</p>
     <p style="margin-bottom: 8px;"><a href="tel:+16363294961" style="color: #cbd5e1;">(636) 329-4961</a> &middot; <a href="mailto:sales@aglaconsulting.com" style="color: #cbd5e1;">sales@aglaconsulting.com</a> &middot; <a href="https://www.linkedin.com/company/agla-consulting/" target="_blank" rel="noopener" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 4px; vertical-align: bottom;" aria-label="Agla Consulting on LinkedIn (opens in a new tab)"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a></p>
     <p style="margin-bottom: 8px;"><a href="privacy.html" style="color: #cbd5e1;">Privacy Policy</a> &middot; <a href="terms.html" style="color: #cbd5e1;">Terms of Use</a> &middot; <a href="accessibility.html" style="color: #cbd5e1;">Accessibility</a></p>
+    <p style="margin-bottom: 8px;"><a href="ai-lead-capture.html" style="color: #cbd5e1;">AI Lead Capture</a> &middot; <a href="quote-automation.html" style="color: #cbd5e1;">Quote &amp; Proposal Automation</a> &middot; <a href="invoice-automation.html" style="color: #cbd5e1;">Invoicing &amp; Payment Collection</a></p>
     &copy; 2026 Agla Consulting LLC &middot; Practical AI, cloud &amp; communications for growing businesses.
   </footer>
 
