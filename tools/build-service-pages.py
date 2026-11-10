@@ -91,11 +91,11 @@ PAGES = [
             ("Will callers know they're talking to AI?", "We recommend being upfront. The agent introduces itself as your virtual assistant, and callers can ask for a person at any time. Where required, calls include a recording notice."),
             ("What happens when the AI can't answer a question?", "It does what a good receptionist would: takes a detailed message, transfers the call to a person during business hours, or alerts your team right away by text or email, based on rules you set."),
             ("Do I need a new phone system or CRM?", "Usually not. We connect to the phone system, CRM, website forms and calendar you already use. If something is missing, we recommend an option that fits your size and budget."),
-            ("What does it cost?", "After the free workflow review, you get a fixed price for the pilot. Ongoing phone and AI usage is billed by those providers to accounts in your name, and we estimate it for you up front, so there are no surprises."),
+            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Ongoing phone and AI usage is billed by those providers to accounts in your name, and we estimate it for you up front, so there are no surprises."),
             ("How quickly can it be running?", "A pilot on one lead source, such as after-hours calls or your website form, typically runs within a few weeks. It runs side by side with your team before it goes live with customers."),
         ],
         "cta_title": "Stop losing leads to voicemail",
-        "cta_text": "In a free 30-minute workflow review, we'll look at where your calls and inquiries slip through the cracks and show you what to automate first.",
+        "cta_text": "In a free consultation, we'll take the time to look at where your calls and inquiries slip through the cracks and show you what to automate first.",
     },
     {
         "slug": "quote-automation",
@@ -150,11 +150,11 @@ PAGES = [
             ("Can it handle my pricing if it's complicated?", "If your team can price a job from a price sheet and a few details, it can usually be automated. Jobs that need a site visit or a judgment call are flagged for a person instead of guessed."),
             ("Will quotes go out without my approval?", "Not unless you want them to. Most clients start by approving every quote, which takes about a minute, and move to approving only exceptions once they trust the results."),
             ("Do I need new quoting software?", "Usually not. We work with the CRM or estimating tool you use today. If you quote from spreadsheets or paper, we recommend an option that fits your size and budget."),
-            ("What does it cost?", "After the free workflow review, you get a fixed price for the pilot. Any ongoing software or AI usage is billed by those providers to accounts in your name, and we estimate it for you up front, so there are no surprises."),
+            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Any ongoing software or AI usage is billed by those providers to accounts in your name, and we estimate it for you up front, so there are no surprises."),
             ("How quickly can it be running?", "A pilot on one service line typically runs within a few weeks. It runs side by side with your team, so you can compare automated quotes with yours before it goes live with customers."),
         ],
         "cta_title": "Get quotes out while customers are still interested",
-        "cta_text": "In a free 30-minute workflow review, we'll look at how you quote today and show you what could be automated first.",
+        "cta_text": "In a free consultation, we'll take the time to look at how you quote today and show you what could be automated first.",
     },
     {
         "slug": "invoice-automation",
@@ -209,11 +209,11 @@ PAGES = [
             ("Will automatic reminders annoy my customers?", "Reminders are friendly, spaced out and written in your voice. You choose how many go out, and they stop the moment a payment comes in."),
             ("Do you handle or store customer payment details?", "No. Customers pay through your own payment processor's secure checkout. We connect the workflow, and card and bank details never pass through us."),
             ("Do I need new accounting or payment software?", "Usually not. We connect to the accounting software and payment processor you already use. If something is missing, we recommend an option that fits your size and budget."),
-            ("What does it cost?", "After the free workflow review, you get a fixed price for the pilot. Any ongoing software or processing fees are billed by those providers to accounts in your name, and we estimate them for you up front, so there are no surprises."),
+            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Any ongoing software or processing fees are billed by those providers to accounts in your name, and we estimate them for you up front, so there are no surprises."),
             ("How quickly can it be running?", "A pilot on one service line typically runs within a few weeks. It runs side by side with your current process before it goes live with customers."),
         ],
         "cta_title": "Get paid faster, without the chasing",
-        "cta_text": "In a free 30-minute workflow review, we'll look at how you bill and collect today and show you what could be automated first.",
+        "cta_text": "In a free consultation, we'll take the time to look at how you bill and collect today and show you what could be automated first.",
     },
 ]
 
@@ -303,12 +303,13 @@ def render(p):
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (Tag Manager container GTM-KVSNRFBP → GA4) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KVSNRFBP"></script>
+  <!-- Google tag (gtag.js) → Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FC32SBT1V7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){{dataLayer.push(arguments);}}
     gtag('js', new Date());
+    gtag('config', 'G-FC32SBT1V7');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -340,7 +341,7 @@ def render(p):
       <a href="/" class="brand" aria-label="Agla Consulting home">
         <picture><source srcset="agla-footprint-logo-nav.webp" type="image/webp"><img src="agla-footprint-logo-nav.png" alt="Agla Consulting, LLC" width="155" height="52"></picture>
       </a>
-      <a href="/#contact" class="btn-nav">Book a Free Workflow Review</a>
+      <a href="/#contact" class="btn-nav">Book a Free Consultation</a>
     </div>
   </nav>
 
@@ -352,7 +353,7 @@ def render(p):
         <h1>{p['h1']}</h1>
         <p class="lead">{p['lead']}</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="/#contact">Book a Free Workflow Review</a>
+          <a class="btn btn-primary" href="/#contact">Book a Free Consultation</a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
         </div>
       </div>
@@ -432,7 +433,7 @@ def render(p):
         <h2 id="cta-title">{p['cta_title']}</h2>
         <p>{p['cta_text']}</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="/#contact">Book a Free Workflow Review</a>
+          <a class="btn btn-primary" href="/#contact">Book a Free Consultation</a>
         </div>
         <p style="margin-top:20px;">Or call <a class="text-link" href="tel:+16363294961">(636) 329-4961</a></p>
       </div>
@@ -455,7 +456,7 @@ def render(p):
       if (href.indexOf('tel:') === 0) name = 'phone_click';
       else if (href.indexOf('mailto:') === 0) name = 'email_click';
       else if (href.indexOf('linkedin.com') !== -1) name = 'linkedin_click';
-      if (name) window.dataLayer.push({{ event: name, link_location: 'service_page' }});
+      if (name) gtag('event', name, {{ link_location: 'service_page' }});
     }});
   </script>
 {RIBBON if PREVIEW else ''}</body>
