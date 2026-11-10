@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (Tag Manager container GTM-KVSNRFBP → GA4) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KVSNRFBP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Lead-to-Cash Automation | St. Louis | Agla Consulting</title>
@@ -771,6 +778,13 @@
           headers: { 'Accept': 'application/json' }
         }).then(function (response) {
           if (!response.ok) throw new Error('Formspree returned ' + response.status);
+          // Analytics: record a lead (service choice only, no personal details)
+          var service = form.querySelector('#service');
+          window.dataLayer.push({
+            event: 'generate_lead',
+            lead_method: 'contact_form',
+            lead_service: service ? service.value : ''
+          });
           form.reset();
           form.hidden = true;
           success.hidden = false;
@@ -782,6 +796,22 @@
         });
       });
     })();
+
+    // Analytics: record clicks on phone, email and LinkedIn links.
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest ? event.target.closest('a[href]') : null;
+      if (!link) return;
+      var href = link.getAttribute('href');
+      var name = null;
+      if (href.indexOf('tel:') === 0) name = 'phone_click';
+      else if (href.indexOf('mailto:') === 0) name = 'email_click';
+      else if (href.indexOf('linkedin.com') !== -1) name = 'linkedin_click';
+      if (!name) return;
+      window.dataLayer.push({
+        event: name,
+        link_location: link.closest('nav') ? 'nav' : link.closest('footer') ? 'footer' : 'contact'
+      });
+    });
   </script>
 </body>
 </html>
