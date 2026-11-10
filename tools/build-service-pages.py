@@ -95,7 +95,7 @@ PAGES = [
             ("How quickly can it be running?", "A pilot on one lead source, such as after-hours calls or your website form, typically runs within a few weeks. It runs side by side with your team before it goes live with customers."),
         ],
         "cta_title": "Stop losing leads to voicemail",
-        "cta_text": "In a free consultation, we'll take the time to look at where your calls and inquiries slip through the cracks and show you what to automate first.",
+        "cta_text": "In a free, no-obligation consultation, we'll look at where your calls and inquiries slip through the cracks and show you what to automate first.",
     },
     {
         "slug": "quote-automation",
@@ -154,7 +154,7 @@ PAGES = [
             ("How quickly can it be running?", "A pilot on one service line typically runs within a few weeks. It runs side by side with your team, so you can compare automated quotes with yours before it goes live with customers."),
         ],
         "cta_title": "Get quotes out while customers are still interested",
-        "cta_text": "In a free consultation, we'll take the time to look at how you quote today and show you what could be automated first.",
+        "cta_text": "In a free, no-obligation consultation, we'll look at how you quote today and show you what could be automated first.",
     },
     {
         "slug": "invoice-automation",
@@ -213,7 +213,7 @@ PAGES = [
             ("How quickly can it be running?", "A pilot on one service line typically runs within a few weeks. It runs side by side with your current process before it goes live with customers."),
         ],
         "cta_title": "Get paid faster, without the chasing",
-        "cta_text": "In a free consultation, we'll take the time to look at how you bill and collect today and show you what could be automated first.",
+        "cta_text": "In a free, no-obligation consultation, we'll look at how you bill and collect today and show you what could be automated first.",
     },
 ]
 
