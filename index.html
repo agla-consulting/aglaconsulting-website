@@ -273,7 +273,7 @@
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #0f172a; color: #f8fafc; line-height: 1.5; }
     a { color: inherit; text-decoration: none; }
     
@@ -352,11 +352,12 @@
     .contact-card p { color: #94a3b8; font-size: 0.9375rem; margin-bottom: 32px; text-align: center; }
     .form-group { margin-bottom: 20px; }
     .form-group label { display: block; font-size: 0.875rem; font-weight: 600; color: #cbd5e1; margin-bottom: 8px; }
-    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #ffffff; font-size: 0.9375rem; outline: none; }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: #3b82f6; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; background-color: #0f172a; border: 1px solid #64748b; border-radius: 8px; color: #ffffff; font-size: 0.9375rem; outline: none; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: #94a3b8; opacity: 1; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: #60a5fa; box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.35); }
     .btn-submit { width: 100%; background-color: #2563eb; color: #ffffff; font-weight: 600; padding: 14px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; transition: background-color 0.2s; }
     .btn-submit:hover { background-color: #1d4ed8; }
-    .direct-email { text-align: center; margin-top: 24px; font-size: 0.875rem; color: #64748b; }
+    .direct-email { text-align: center; margin-top: 24px; font-size: 0.875rem; color: #94a3b8; }
     .direct-email a { color: #60a5fa; text-decoration: underline; }
     .btn-submit:disabled { opacity: 0.6; cursor: wait; }
     .contact-card .form-consent { margin: 12px 0 0; font-size: 0.75rem; line-height: 1.5; color: #94a3b8; text-align: center; }
@@ -402,6 +403,21 @@
     .nav-phone svg { color: #60a5fa; }
     .nav-right { display: flex; align-items: center; gap: 32px; }
 
+    /* Mobile menu button (shown below 768px) */
+    .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; background: transparent; color: #ffffff; border: 1px solid #64748b; border-radius: 8px; cursor: pointer; }
+    .menu-toggle:hover { border-color: #60a5fa; }
+    .menu-toggle:focus-visible, .nav-links a:focus-visible, .nav-phone:focus-visible { outline: 2px solid #60a5fa; outline-offset: 2px; }
+    .menu-toggle .icon-close { display: none; }
+    .menu-toggle[aria-expanded="true"] .icon-open { display: none; }
+    .menu-toggle[aria-expanded="true"] .icon-close { display: block; }
+
+    /* Respect visitors who prefer less motion */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+      .card:hover { transform: none; }
+    }
+
     /* FAQ */
     #faq { background-color: #f8fafc; }
     .faq-list { max-width: 860px; margin: 0 auto; display: grid; gap: 12px; }
@@ -422,8 +438,17 @@
       .roi-grid { grid-template-columns: 1fr; }
       .path-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.25rem; }
-      .nav-links { display: none; }
       .contact-card { padding: 24px; }
+      .nav-right { gap: 12px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 24px 20px; background-color: #0f172a; border-bottom: 1px solid #1e293b; box-shadow: 0 16px 24px -8px rgba(0, 0, 0, 0.5); }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 14px 4px; font-size: 1rem; color: #e2e8f0; border-bottom: 1px solid #1e293b; }
+      .nav-links a.btn-nav { margin-top: 16px; padding: 12px 16px; text-align: center; border-bottom: 0; }
+    }
+    @media (max-width: 420px) {
+      .nav-phone span { display: none; }
+      .nav-phone { width: 44px; height: 44px; justify-content: center; border: 1px solid #64748b; border-radius: 8px; }
     }
   </style>
 </head>
@@ -431,16 +456,20 @@
   <nav aria-label="Main Navigation">
     <div class="nav-container">
       <a href="#" class="brand" style="display: flex; align-items: center;">
-        <img src="agla-footprint-logo-nav.png" alt="Agla Consulting, LLC" width="155" height="52" style="height: 52px; width: auto;">
+        <picture><source srcset="agla-footprint-logo-nav.webp" type="image/webp"><img src="agla-footprint-logo-nav.png" alt="Agla Consulting, LLC" width="155" height="52" style="height: 52px; width: auto; display: block;"></picture>
       </a>
       <div class="nav-right">
-        <div class="nav-links">
+        <div class="nav-links" id="primary-menu">
           <a href="#l2c">Lead-to-Cash</a>
           <a href="#services">Services</a>
           <a href="#faq">FAQ</a>
           <a href="#contact" class="btn-nav">Book a Free Workflow Review</a>
         </div>
         <a href="tel:+16363294961" class="nav-phone" aria-label="Call Agla Consulting at (636) 329-4961"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.52 5.52l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"></path></svg><span>(636) 329-4961</span></a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+          <svg class="icon-open" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg class="icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -752,10 +781,10 @@
   </main>
 
   <footer>
-    <img src="agla-footprint-logo-transparent.png" alt="Agla Consulting: Your next step in AI" width="360" height="127" loading="lazy" style="display: block; margin: 0 auto 16px; width: 360px; max-width: 80%; height: auto;">
+    <picture><source srcset="agla-footprint-logo-footer.webp" type="image/webp"><img src="agla-footprint-logo-footer.png" alt="Agla Consulting: Your next step in AI" width="360" height="127" loading="lazy" decoding="async" style="display: block; margin: 0 auto 16px; width: 360px; max-width: 80%; height: auto;"></picture>
     <p style="margin-bottom: 8px;">St. Louis-based &middot; On-site within 100 miles &middot; Remote nationwide</p>
     <p style="margin-bottom: 8px;"><a href="tel:+16363294961" style="color: #cbd5e1;">(636) 329-4961</a> &middot; <a href="mailto:sales@aglaconsulting.com" style="color: #cbd5e1;">sales@aglaconsulting.com</a> &middot; <a href="https://www.linkedin.com/company/agla-consulting/" target="_blank" rel="noopener" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 4px; vertical-align: bottom;" aria-label="Agla Consulting on LinkedIn (opens in a new tab)"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a></p>
-    <p style="margin-bottom: 8px;"><a href="privacy.html" style="color: #cbd5e1;">Privacy Policy</a> &middot; <a href="terms.html" style="color: #cbd5e1;">Terms of Use</a></p>
+    <p style="margin-bottom: 8px;"><a href="privacy.html" style="color: #cbd5e1;">Privacy Policy</a> &middot; <a href="terms.html" style="color: #cbd5e1;">Terms of Use</a> &middot; <a href="accessibility.html" style="color: #cbd5e1;">Accessibility</a></p>
     &copy; 2026 Agla Consulting LLC &middot; Practical AI, cloud &amp; communications for growing businesses.
   </footer>
 
@@ -798,6 +827,30 @@
           button.disabled = false;
           button.textContent = label;
         });
+      });
+    })();
+
+    // Mobile menu: toggle, close on link tap, close with Escape.
+    (function () {
+      var toggle = document.querySelector('.menu-toggle');
+      var menu = document.getElementById('primary-menu');
+      if (!toggle || !menu) return;
+      function setOpen(open) {
+        menu.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+      toggle.addEventListener('click', function () {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      menu.addEventListener('click', function (event) {
+        if (event.target.closest('a')) setOpen(false);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setOpen(false);
+          toggle.focus();
+        }
       });
     })();
 

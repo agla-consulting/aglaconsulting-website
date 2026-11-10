@@ -2,3 +2,6 @@
 # Keep maintenance scripts out of the published website.
 exclude:
   - tools
+# Publish dot-folders that Jekyll skips by default (security.txt lives here).
+include:
+  - .well-known
