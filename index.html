@@ -378,6 +378,9 @@
     .form-success .success-icon { width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 9999px; background-color: rgba(59, 130, 246, 0.15); color: #60a5fa; font-size: 1.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
     .form-success h3 { font-size: 1.375rem; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
     .contact-card .form-success p { margin-bottom: 0; }
+    .btn-again { margin-top: 20px; background: transparent; color: #93c5fd; border: 1px solid #475569; border-radius: 8px; padding: 10px 18px; font-size: 0.9375rem; font-weight: 600; cursor: pointer; }
+    .btn-again:hover { border-color: #93c5fd; color: #ffffff; }
+    .btn-again:focus-visible { outline: 2px solid #60a5fa; outline-offset: 2px; }
 
     footer { padding: 32px 24px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.75rem; color: #64748b; }
 
@@ -872,6 +875,7 @@
           <div class="success-icon" aria-hidden="true">✓</div>
           <h3>Thank you. Your request is in.</h3>
           <p>We'll reach out within one business day to schedule your free consultation.</p>
+          <button type="button" class="btn-again" id="form-again">Send another request</button>
         </div>
         <div class="direct-email">Or call <a href="tel:+16363294961">(636) 329-4961</a> &middot; email <a href="mailto:sales@aglaconsulting.com">sales@aglaconsulting.com</a></div>
       </div>
@@ -930,6 +934,8 @@
             lead_service: service ? service.value : ''
           });
           form.reset();
+          button.disabled = false;
+          button.textContent = label;
           form.hidden = true;
           success.hidden = false;
           success.focus();
@@ -939,6 +945,17 @@
           button.textContent = label;
         });
       });
+      // "Send another request": bring the form back without a page refresh.
+      var again = document.getElementById('form-again');
+      if (again) {
+        again.addEventListener('click', function () {
+          success.hidden = true;
+          error.hidden = true;
+          form.hidden = false;
+          var first = form.querySelector('#name');
+          if (first) first.focus();
+        });
+      }
     })();
 
     // Mobile menu: toggle, close on link tap, close with Escape.
