@@ -15,3 +15,4 @@
 .msg { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px 4px; margin: 0 0 14px; }
 .msg p:first-child { color: #1d4ed8; margin-bottom: 6px; }
 @media (max-width: 640px) { .sched tbody th { white-space: normal; } }
+.legal code { background-color: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 4px; padding: 1px 6px; font-size: 0.875em; color: #0f172a; }
