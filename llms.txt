@@ -9,13 +9,13 @@ Founder & Principal Consultant: Steve Heienickle (https://www.linkedin.com/in/st
 ## What we do
 
 - **Lead-to-Cash (L2C) automation:** the full lifecycle from first inquiry to payment collected, in five stages:
-  1. Capture (Lead Management): AI answers calls, texts and web forms 24/7 and logs every lead in the CRM.
+  1. Capture (Lead Management): AI agents take in website forms, social leads, chats and emails 24/7, check and clean each lead, reply in minutes and log it in the CRM.
   2. Qualify (Lead Conversion & Qualification): AI asks qualifying questions, scores leads, converts them to opportunities and books appointments.
   3. Quote (CPQ: Configure, Price, Quote): the business's pricing rules generate professional proposals in minutes, with automatic follow-up.
   4. Close (Contract & Order Management): e-signature and deposit requests, and accepted quotes become scheduled jobs or orders.
   5. Collect (Billing & Collections): automatic invoices, payment links, reminders and accounting sync.
 - **Entry points:** Lead-to-Cash, Opportunity-to-Cash, Quote-to-Cash (Q2C) and Order-to-Cash engagements, starting at the stage where revenue leaks most.
-- **Supporting services:** agentic AI workflows, AI call answering and lead capture, security and access governance, fractional CTO and advisory.
+- **Supporting services:** agentic AI workflows, AI agents for inbound leads, security and access governance.
 
 ## How we work
 
@@ -43,7 +43,7 @@ St. Louis City and County, St. Charles County, Jefferson County, Franklin County
 
 ## Service pages
 
-- AI Call Answering & Lead Capture (stages 1-2, Capture & Qualify): https://aglaconsulting.com/ai-lead-capture.html
+- AI Agents for Inbound Leads (stages 1-2, Capture & Qualify): https://aglaconsulting.com/ai-lead-capture.html
 - Quote & Proposal Automation (stages 3-4, Quote & Close): https://aglaconsulting.com/quote-automation.html
 - Invoicing & Payment Collection (stage 5, Collect): https://aglaconsulting.com/invoice-automation.html
 
