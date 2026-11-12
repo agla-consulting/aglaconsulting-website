@@ -845,7 +845,6 @@
         <p>A free, no-obligation consultation. Tell us where leads, quotes or payments slip through the cracks, and we'll map your Lead-to-Cash workflow and show you what to automate first.</p>
         <form id="contact-form" action="https://formspree.io/f/xbggnjvk" method="POST">
           <!-- Spam trap: hidden from people; bots that fill it are discarded by Formspree -->
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px;">
           <input type="hidden" name="_subject" value="New consultation request from aglaconsulting.com">
           <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required></div>
           <div class="form-group"><label for="email">Work Email</label><input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
@@ -864,6 +863,7 @@
             </select>
           </div>
           <div class="form-group"><label for="message">What's slowing your business down?</label><textarea id="message" name="message" rows="4" placeholder="e.g. Web leads sit for a day, quotes take two days, and invoices go out late..." required></textarea></div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore data-bwignore data-form-type="other" aria-hidden="true" style="position: absolute; left: -9999px;">
           <button type="submit" class="btn-submit">Request My Free Consultation</button>
           <p class="form-consent">By submitting, you agree that we may contact you about your request, and to our <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>
           <p id="form-error" class="form-error" role="alert" hidden>Something went wrong sending your request. Please try again or email <a href="mailto:sales@aglaconsulting.com">sales@aglaconsulting.com</a>.</p>
@@ -900,6 +900,19 @@
 
       form.addEventListener('submit', function (event) {
         event.preventDefault();
+        // The hidden spam-trap field can be filled by browser autofill. If its value matches what the
+        // visitor typed in their own fields, it is autofill and not a bot, so clear it before sending.
+        var trap = form.querySelector('[name="_gotcha"]');
+        if (trap && trap.value) {
+          var v = trap.value.trim().toLowerCase();
+          var own = ['name', 'email', 'phone'].map(function (n) {
+            var el = form.elements[n];
+            return el ? el.value.trim().toLowerCase() : '';
+          });
+          if (v.length >= 2 && own.some(function (o) { return o && (o === v || o.indexOf(v) !== -1 || v.indexOf(o) !== -1); })) {
+            trap.value = '';
+          }
+        }
         error.hidden = true;
         button.disabled = true;
         button.textContent = 'Sending...';
