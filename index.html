@@ -349,25 +349,15 @@
     .stage-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
     .stage-label.leak { color: #fca5a5; }
     .stage-label.fix { color: #60a5fa; margin-top: 14px; }
+    .stage-label.track { color: #94a3b8; margin-top: 14px; }
+    .stage-label.track + p strong { color: #e2e8f0; }
     .stage p { font-size: 0.875rem; color: #94a3b8; line-height: 1.55; }
     .l2c-note { max-width: 820px; margin: 32px auto 0; text-align: center; font-size: 0.9375rem; color: #94a3b8; }
     .l2c-note strong { color: #ffffff; }
 
     /* Entry points */
-    .path-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .path-card { background-color: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 28px; }
-    .path-card h3 { font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 4px; }
-    .path-card .path-span { font-size: 0.8125rem; font-weight: 600; color: #60a5fa; margin-bottom: 12px; }
-    .path-card p { font-size: 0.9375rem; color: #94a3b8; line-height: 1.6; }
-    .path-card .best-for { margin-top: 12px; color: #cbd5e1; }
-    .path-card.featured { border-color: #3b82f6; box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.35); }
 
     /* KPIs */
-    .kpi-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-    .kpi { background-color: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; text-align: center; }
-    .kpi h3 { font-size: 1rem; font-weight: 700; color: #ffffff; margin-bottom: 6px; }
-    .kpi .kpi-stage { font-size: 0.75rem; font-weight: 600; color: #60a5fa; margin-bottom: 8px; }
-    .kpi p { font-size: 0.875rem; color: #94a3b8; }
 
     /* Contact Form Section */
     .contact-section { padding: 80px 24px; max-width: 640px; margin: 0 auto; }
@@ -397,28 +387,26 @@
 
     /* ===== Light content theme: navy hero/nav/contact/footer, white & light-gray content ===== */
     .services-section { background-color: #ffffff; border-top: 1px solid #e2e8f0; }
-    #paths, #services { background-color: #f8fafc; }
+    #services { background-color: #f8fafc; }
     .section-title { color: #0f172a; }
     .section-subtitle { color: #475569; }
 
-    .card, .stage, .path-card, .kpi { background-color: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px -12px rgba(15, 23, 42, 0.15); }
+    .card, .stage { background-color: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px -12px rgba(15, 23, 42, 0.15); }
     .card:hover { border-color: #2563eb; }
     .icon-box { background-color: #eff6ff; color: #2563eb; }
-    .card h3, .stage h3, .path-card h3, .kpi h3 { color: #0f172a; }
-    .card p, .stage p, .path-card p, .kpi p { color: #475569; }
+    .card h3, .stage h3 { color: #0f172a; }
+    .card p, .stage p { color: #475569; }
 
     .stage { border-top: 3px solid #2563eb; }
     .stage-num { color: #2563eb; }
     .stage-tag { color: #1e3a8a; background-color: #eff6ff; border-color: #bfdbfe; }
     .stage-label.leak { color: #b91c1c; }
+    .stage-label.track { color: #475569; }
+    .stage-label.track + p strong { color: #0f172a; }
     .stage-label.fix { color: #1d4ed8; }
     .l2c-note { color: #475569; }
     .l2c-note strong { color: #0f172a; }
 
-    .path-card .path-span, .kpi .kpi-stage { color: #2563eb; }
-    .path-card .best-for { color: #334155; }
-    .path-card .best-for strong { color: #0f172a; }
-    .path-card.featured { border-color: #2563eb; box-shadow: 0 0 0 1px #2563eb, 0 12px 28px -12px rgba(37, 99, 235, 0.35); }
 
     footer { color: #94a3b8; }
 
@@ -520,7 +508,6 @@
     }
     @media (max-width: 768px) {
       .roi-grid { grid-template-columns: 1fr; }
-      .path-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.25rem; }
       .contact-card { padding: 24px; }
     }
@@ -620,7 +607,7 @@
           <span class="demo-flag">Sent after your approval, or automatically if you choose</span>
         </article>
       </div>
-      <p class="demo-note">Illustration only. The details of each step are set up around your services, your questions and your rules.</p>
+      <p class="demo-note">Illustration only. The details of each step are set up around your services, your questions and your rules. <a class="learn-more" style="margin-top:0" href="slow-lead-follow-up-costs-jobs.html">Why slow follow-up costs jobs</a></p>
     </section>
 
     <!-- Lead-to-Cash lifecycle -->
@@ -636,6 +623,8 @@
           <p>Slow replies, inquiries buried in inboxes and messy CRM records. Most buyers go with whoever responds first.</p>
           <div class="stage-label fix">What we automate</div>
           <p>AI agents take in website forms, social leads, chats and emails 24/7, check and clean each lead, reply in minutes, and log it in your CRM with its source.</p>
+          <div class="stage-label track">We measure</div>
+          <p><strong>Speed to lead:</strong> time from first inquiry to first response.</p>
           <a class="learn-more" href="ai-lead-capture.html">Learn more about AI lead capture<span class="visually-hidden"> and inbound lead agents</span></a>
         </article>
         <article class="stage">
@@ -646,6 +635,8 @@
           <p>Time spent on poor-fit inquiries while good leads go cold waiting for a callback.</p>
           <div class="stage-label fix">What we automate</div>
           <p>AI asks your qualifying questions, scores the lead, converts it to an opportunity, and routes it or books the appointment.</p>
+          <div class="stage-label track">We measure</div>
+          <p><strong>Lead-to-opportunity rate:</strong> share of inquiries that become qualified opportunities.</p>
         </article>
         <article class="stage">
           <div class="stage-num">Stage 3</div>
@@ -655,6 +646,8 @@
           <p>Quotes take days, pricing varies by who wrote it, and nobody follows up.</p>
           <div class="stage-label fix">What we automate</div>
           <p>Your pricing and discount rules generate a professional proposal in minutes, with automatic follow-ups until you get a yes or no.</p>
+          <div class="stage-label track">We measure</div>
+          <p><strong>Quote turnaround:</strong> time from qualified opportunity to quote delivered.</p>
           <a class="learn-more" href="quote-automation.html">Learn more<span class="visually-hidden"> about quote and proposal automation</span></a>
         </article>
         <article class="stage">
@@ -665,6 +658,8 @@
           <p>Approved quotes stall waiting on signatures, deposits or scheduling.</p>
           <div class="stage-label fix">What we automate</div>
           <p>E-signature and deposit requests go out automatically, and accepted quotes become scheduled jobs or orders.</p>
+          <div class="stage-label track">We measure</div>
+          <p><strong>Quote win rate:</strong> share of quotes that turn into signed work.</p>
           <a class="learn-more" href="quote-automation.html">Learn more<span class="visually-hidden"> about closing and e-signature automation</span></a>
         </article>
         <article class="stage">
@@ -675,10 +670,13 @@
           <p>Invoices go out late and someone spends hours chasing payments.</p>
           <div class="stage-label fix">What we automate</div>
           <p>Completed work triggers the invoice and a payment link, reminders run on their own, and payments sync to your accounting.</p>
+          <div class="stage-label track">We measure</div>
+          <p><strong>Days to cash:</strong> time from completed work to payment received.</p>
           <a class="learn-more" href="invoice-automation.html">Learn more<span class="visually-hidden"> about invoicing and payment collection</span></a>
         </article>
       </div>
       <p class="l2c-note"><strong>One connected system, not five disconnected tools.</strong> Each stage hands off to the next automatically, so nothing waits on a sticky note, an inbox or a busy owner.</p>
+      <p class="l2c-note">You don&#39;t have to automate everything at once. We start at the stage costing you the most, whether that&#39;s the full lifecycle, just quoting or just billing. We baseline these five numbers before we begin and report them after go-live, so you can see where conversion and cash flow improved.</p>
     </section>
 
     <!-- Who you'll work with -->
@@ -711,71 +709,6 @@
             <li><strong>Your systems, your data.</strong> Built on your accounts and documented, so you're never locked in.</li>
             <li><strong>A human in the loop.</strong> AI does the busywork, and you stay in control of what reaches customers.</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Entry points -->
-    <section id="paths" class="services-section">
-      <h2 class="section-title">Start Where Revenue Leaks Most</h2>
-      <p class="section-subtitle">You don't have to automate everything at once. We start at the stage costing you the most, then extend across the lifecycle.</p>
-      <div class="path-grid">
-        <article class="path-card featured">
-          <h3>Lead-to-Cash (L2C)</h3>
-          <div class="path-span">First inquiry &rarr; payment collected</div>
-          <p>The complete lifecycle, automated end to end. Every touchpoint from the first inquiry through quoting, closing, invoicing and collection works as one connected system.</p>
-          <p class="best-for"><strong>Best when:</strong> Leads, quotes and billing live in separate tools, spreadsheets or someone's head.</p>
-        </article>
-        <article class="path-card">
-          <h3>Opportunity-to-Cash</h3>
-          <div class="path-span">Qualified opportunity &rarr; payment collected</div>
-          <p>Picks up once a lead is qualified. It connects your sales follow-through, quoting and closing directly to billing so deals don't fall through the cracks.</p>
-          <p class="best-for"><strong>Best when:</strong> You get plenty of good leads, but too few turn into signed work.</p>
-        </article>
-        <article class="path-card">
-          <h3>Quote-to-Cash (Q2C)</h3>
-          <div class="path-span">Quote created &rarr; payment collected</div>
-          <p>Focuses on the estimate onward: faster, consistent quotes, e-signature, deposits, invoicing and payment collection.</p>
-          <p class="best-for"><strong>Best when:</strong> Quotes are slow, inconsistent or rarely followed up.</p>
-        </article>
-        <article class="path-card">
-          <h3>Order-to-Cash</h3>
-          <div class="path-span">Deal closed &rarr; payment collected</div>
-          <p>The back-office half: turning approved work into scheduled jobs or orders, then billing and collecting without manual chasing.</p>
-          <p class="best-for"><strong>Best when:</strong> The work gets done, but cash comes in late.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- KPIs -->
-    <section id="metrics" class="services-section">
-      <h2 class="section-title">Metrics That Move Revenue</h2>
-      <p class="section-subtitle">We baseline these before we start and report them after go-live, so you can see exactly where conversion and cash flow improved.</p>
-      <div class="kpi-grid">
-        <div class="kpi">
-          <h3>Speed to Lead</h3>
-          <div class="kpi-stage">Capture</div>
-          <p>Time from first inquiry to first response.</p>
-        </div>
-        <div class="kpi">
-          <h3>Lead-to-Opportunity Rate</h3>
-          <div class="kpi-stage">Qualify</div>
-          <p>Share of inquiries that become qualified opportunities.</p>
-        </div>
-        <div class="kpi">
-          <h3>Quote Turnaround</h3>
-          <div class="kpi-stage">Quote</div>
-          <p>Time from qualified opportunity to quote delivered.</p>
-        </div>
-        <div class="kpi">
-          <h3>Quote Win Rate</h3>
-          <div class="kpi-stage">Close</div>
-          <p>Share of quotes that turn into signed work.</p>
-        </div>
-        <div class="kpi">
-          <h3>Days to Cash</h3>
-          <div class="kpi-stage">Collect</div>
-          <p>Time from completed work to payment received.</p>
         </div>
       </div>
     </section>
@@ -977,7 +910,7 @@
     <p style="margin-bottom: 8px;">St. Louis-based &middot; On-site within 100 miles &middot; Remote nationwide</p>
     <p style="margin-bottom: 8px;"><a href="tel:+16363294961" style="color: #cbd5e1;">(636) 329-4961</a> &middot; <a href="mailto:sales@aglaconsulting.com" style="color: #cbd5e1;">sales@aglaconsulting.com</a> &middot; <a href="https://www.linkedin.com/company/agla-consulting/" target="_blank" rel="noopener" style="color: #cbd5e1; display: inline-flex; align-items: center; gap: 4px; vertical-align: bottom;" aria-label="Agla Consulting on LinkedIn (opens in a new tab)"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a></p>
     <p style="margin-bottom: 8px;"><a href="privacy.html" style="color: #cbd5e1;">Privacy Policy</a> &middot; <a href="terms.html" style="color: #cbd5e1;">Terms of Use</a> &middot; <a href="accessibility.html" style="color: #cbd5e1;">Accessibility</a></p>
-    <p style="margin-bottom: 8px;"><a href="ai-lead-capture.html" style="color: #cbd5e1;">AI Lead Capture</a> &middot; <a href="quote-automation.html" style="color: #cbd5e1;">Quote &amp; Proposal Automation</a> &middot; <a href="invoice-automation.html" style="color: #cbd5e1;">Invoicing &amp; Payment Collection</a></p>
+    <p style="margin-bottom: 8px;"><a href="ai-lead-capture.html" style="color: #cbd5e1;">AI Lead Capture</a> &middot; <a href="quote-automation.html" style="color: #cbd5e1;">Quote &amp; Proposal Automation</a> &middot; <a href="invoice-automation.html" style="color: #cbd5e1;">Invoicing &amp; Payment Collection</a> &middot; <a href="slow-lead-follow-up-costs-jobs.html" style="color: #cbd5e1;">Article: Slow Lead Follow-Up</a></p>
     &copy; 2026 Agla Consulting LLC &middot; Practical AI, cloud &amp; communications for growing businesses.
   </footer>
 
