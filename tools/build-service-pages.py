@@ -454,18 +454,7 @@ def render(p):
     <p>&copy; 2026 Agla Consulting LLC &middot; St. Louis-based &middot; Remote nationwide</p>
   </footer>
 
-  <script>
-    // Analytics: record clicks on phone, email and LinkedIn links (no personal data).
-    document.addEventListener('click', function (event) {{
-      var link = event.target.closest ? event.target.closest('a[href]') : null;
-      if (!link) return;
-      var href = link.getAttribute('href'), name = null;
-      if (href.indexOf('tel:') === 0) name = 'phone_click';
-      else if (href.indexOf('mailto:') === 0) name = 'email_click';
-      else if (href.indexOf('linkedin.com') !== -1) name = 'linkedin_click';
-      if (name) gtag('event', name, {{ link_location: 'service_page' }});
-    }});
-  </script>
+  <script src="track.js" defer></script>
 {RIBBON if PREVIEW else ''}</body>
 </html>
 """

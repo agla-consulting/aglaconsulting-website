@@ -952,20 +952,7 @@
       });
     })();
 
-    // Analytics: record clicks on phone, email and LinkedIn links.
-    document.addEventListener('click', function (event) {
-      var link = event.target.closest ? event.target.closest('a[href]') : null;
-      if (!link) return;
-      var href = link.getAttribute('href');
-      var name = null;
-      if (href.indexOf('tel:') === 0) name = 'phone_click';
-      else if (href.indexOf('mailto:') === 0) name = 'email_click';
-      else if (href.indexOf('linkedin.com') !== -1) name = 'linkedin_click';
-      if (!name) return;
-      gtag('event', name, {
-        link_location: link.closest('nav') ? 'nav' : link.closest('footer') ? 'footer' : 'contact'
-      });
-    });
   </script>
+  <script src="track.js" defer></script>
 </body>
 </html>
