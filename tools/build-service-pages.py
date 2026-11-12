@@ -449,7 +449,7 @@ def render(p):
 
   <footer>
     <p><a href="{home_url}">Home</a> &middot; <a href="{l2c_url}">Lead-to-Cash</a> &middot; <a href="{process_url}">How It Works</a> &middot; <a href="{contact_url}">Contact</a></p>
-    <p>{svc_footer} &middot; <a href="slow-lead-follow-up-costs-jobs.html">Article: Slow Lead Follow-Up</a></p>
+    <p>{svc_footer} &middot; <a href="slow-lead-follow-up-costs-jobs.html">Article: Slow Lead Follow-Up</a> &middot; <a href="how-often-to-follow-up-on-a-quote.html">Article: Quote Follow-Up</a></p>
     <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a> &middot; <a href="accessibility.html">Accessibility</a></p>
     <p>&copy; 2026 Agla Consulting LLC &middot; St. Louis-based &middot; Remote nationwide</p>
   </footer>

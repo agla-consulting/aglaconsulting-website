@@ -7,3 +7,11 @@
 .btn-cta:hover { background-color: #1d4ed8; }
 .sources { font-size: 0.9375rem; color: #475569; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.sched { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 0.9375rem; }
+.sched th, .sched td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; }
+.sched thead th { background-color: #f1f5f9; color: #0f172a; font-weight: 700; }
+.sched tbody th { color: #0f172a; font-weight: 700; white-space: nowrap; }
+.sched td { color: #334155; }
+.msg { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px 4px; margin: 0 0 14px; }
+.msg p:first-child { color: #1d4ed8; margin-bottom: 6px; }
+@media (max-width: 640px) { .sched tbody th { white-space: normal; } }
