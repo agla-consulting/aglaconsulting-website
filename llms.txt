@@ -4,7 +4,7 @@
 
 ## Who you work with
 
-Founder & Principal Consultant: Steve Heienickle (https://www.linkedin.com/in/steveheienickle). 25+ years building order-to-cash, ordering and provisioning systems, most recently as a vice president of software development at a Fortune 100 telecommunications company; co-founded Connected Consulting Services, a small-business phone company, in 2008. Clients work with him directly.
+Founder & Principal Consultant: Steve Heienickle (https://www.linkedin.com/in/steveheienickle). 25+ years building order-to-cash, ordering and provisioning systems, most recently as a vice president of software development at a Fortune 100 company; co-founded a small-business technology services company in 2008. Clients work with him directly.
 
 ## What we do
 
@@ -15,7 +15,7 @@ Founder & Principal Consultant: Steve Heienickle (https://www.linkedin.com/in/st
   4. Close (Contract & Order Management): e-signature and deposit requests, and accepted quotes become scheduled jobs or orders.
   5. Collect (Billing & Collections): automatic invoices, payment links, reminders and accounting sync.
 - **Entry points:** Lead-to-Cash, Opportunity-to-Cash, Quote-to-Cash (Q2C) and Order-to-Cash engagements, starting at the stage where revenue leaks most.
-- **Supporting services:** agentic AI workflows, AI voice agents and cloud phone (VoIP), cloud infrastructure, security and access governance, managed IT and networking, fractional CTO and advisory.
+- **Supporting services:** agentic AI workflows, AI call answering and lead capture, security and access governance, fractional CTO and advisory.
 
 ## How we work
 

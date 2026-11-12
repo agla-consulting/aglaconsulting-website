@@ -42,9 +42,9 @@ PAGES = [
         "slug": "ai-lead-capture",
         "nav_name": "AI Lead Capture",
         "stage": "Stages 1&ndash;2 &middot; Capture &amp; Qualify",
-        "title": "AI Call Answering & Lead Capture for Small Businesses | Agla Consulting",
-        "og_title": "AI Call Answering & Lead Capture | Agla Consulting",
-        "description": "Answer every call, text and web inquiry in seconds, day or night. Agla sets up AI lead capture that qualifies leads your way and logs them in your CRM. St. Louis and nationwide.",
+        "title": "AI Call Answering & Missed-Call Lead Capture for Small Businesses | Agla Consulting",
+        "og_title": "AI Call Answering & Missed-Call Lead Capture | Agla Consulting",
+        "description": "Never lose another lead to voicemail. Agla automates 24/7 AI call answering, missed-call text back, and instant CRM logging for businesses in St. Louis and nationwide.",
         "og_description": "Every call, text and web inquiry answered in seconds, qualified your way and logged in your CRM.",
         "service_name": "AI Call Answering & Lead Capture",
         "service_type": "AI lead capture and call answering automation",
@@ -85,13 +85,13 @@ PAGES = [
             ("Everything is reviewable.", "Call summaries and transcripts let you check quality and coach the agent over time."),
             ("Your accounts, your data.", "Built on accounts in your name and documented, so you're never locked in."),
         ],
-        "tools": ["Your CRM", "Business phone &amp; cloud PBX", "Website forms", "Social media lead ads", "Shared email inbox", "Calendar &amp; scheduling", "Business text messaging"],
+        "tools": ["Your CRM (Jobber, The Customer Factor, Housecall Pro, etc.)", "Your existing business phone line", "Website forms", "Social media lead ads", "Shared email inbox", "Calendar &amp; scheduling", "Business text messaging"],
         "start_sub": "Most clients start with one lead source, such as after-hours calls or the website quote form, and run it side by side with their team before going live.",
         "faq": [
             ("Will callers know they're talking to AI?", "We recommend being upfront. The agent introduces itself as your virtual assistant, and callers can ask for a person at any time. Where required, calls include a recording notice."),
             ("What happens when the AI can't answer a question?", "It does what a good receptionist would: takes a detailed message, transfers the call to a person during business hours, or alerts your team right away by text or email, based on rules you set."),
             ("Do I need a new phone system or CRM?", "Usually not. We connect to the phone system, CRM, website forms and calendar you already use. If something is missing, we recommend an option that fits your size and budget."),
-            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Ongoing phone and AI usage is billed by those providers to accounts in your name, and we estimate it for you up front, so there are no surprises."),
+            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Ongoing phone and AI usage is billed by those providers directly to accounts in your name, and we estimate it for you up front, so there are no surprises."),
             ("How quickly can it be running?", "A pilot on one lead source, such as after-hours calls or your website form, typically runs within a few weeks. It runs side by side with your team before it goes live with customers."),
         ],
         "cta_title": "Stop losing leads to voicemail",
@@ -101,9 +101,9 @@ PAGES = [
         "slug": "quote-automation",
         "nav_name": "Quote &amp; Proposal Automation",
         "stage": "Stages 3&ndash;4 &middot; Quote &amp; Close",
-        "title": "Quote & Proposal Automation for Small Businesses | Agla Consulting",
+        "title": "Quote & Proposal Automation for Trade & Service Businesses | Agla Consulting",
         "og_title": "Quote & Proposal Automation | Agla Consulting",
-        "description": "Send professional quotes in minutes, built from your own pricing rules, with automatic follow-up, e-signatures and deposits. Agla automates quote-to-close for small businesses.",
+        "description": "Send professional quotes in minutes from your own pricing rules, with automated follow-ups, e-signatures and deposits. Agla automates quote-to-close for growing businesses.",
         "og_description": "Professional quotes in minutes from your own pricing rules, with follow-ups, e-signatures and deposits that run on their own.",
         "service_name": "Quote & Proposal Automation",
         "service_type": "Quote-to-cash and proposal automation",
@@ -144,13 +144,13 @@ PAGES = [
             ("Every quote is logged.", "Each version, follow-up and approval is recorded in your CRM, so nothing falls through the cracks."),
             ("Your accounts, your data.", "Built on accounts in your name and documented, so you're never locked in."),
         ],
-        "tools": ["Your CRM", "Estimating or quoting tool", "Price sheets &amp; spreadsheets", "E-signature", "Payment processor", "Calendar &amp; scheduling", "Email &amp; text messaging"],
+        "tools": ["Your CRM (Jobber, The Customer Factor, Housecall Pro, etc.)", "Estimating or quoting tool", "Price sheets &amp; spreadsheets", "E-signature", "Payment processor", "Calendar &amp; scheduling", "Email &amp; text messaging"],
         "start_sub": "Most clients start with one service line, using their existing price sheet, and compare automated quotes with the ones their team writes before going live.",
         "faq": [
             ("Can it handle my pricing if it's complicated?", "If your team can price a job from a price sheet and a few details, it can usually be automated. Jobs that need a site visit or a judgment call are flagged for a person instead of guessed."),
             ("Will quotes go out without my approval?", "Not unless you want them to. Most clients start by approving every quote, which takes about a minute, and move to approving only exceptions once they trust the results."),
             ("Do I need new quoting software?", "Usually not. We work with the CRM or estimating tool you use today. If you quote from spreadsheets or paper, we recommend an option that fits your size and budget."),
-            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Any ongoing software or AI usage is billed by those providers to accounts in your name, and we estimate it for you up front, so there are no surprises."),
+            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Any ongoing software or AI usage is billed directly to accounts in your name, with no lock-in."),
             ("How quickly can it be running?", "A pilot on one service line typically runs within a few weeks. It runs side by side with your team, so you can compare automated quotes with yours before it goes live with customers."),
         ],
         "cta_title": "Get quotes out while customers are still interested",
@@ -160,8 +160,8 @@ PAGES = [
         "slug": "invoice-automation",
         "nav_name": "Invoicing &amp; Payment Collection",
         "stage": "Stage 5 &middot; Collect",
-        "title": "Invoicing & Payment Collection Automation for Small Businesses | Agla Consulting",
-        "og_title": "Invoicing & Payment Collection Automation | Agla Consulting",
+        "title": "Automated Invoicing & Payment Collection for Small Businesses | Agla Consulting",
+        "og_title": "Automated Invoicing & Payment Collection | Agla Consulting",
         "description": "Get paid faster with less chasing. Agla automates invoices, payment links, reminders and accounting sync for small and midsize businesses in St. Louis and nationwide.",
         "og_description": "Invoices, payment links and reminders that run on their own, with payments synced to your accounting.",
         "service_name": "Invoicing & Payment Collection Automation",
@@ -203,13 +203,13 @@ PAGES = [
             ("Payment details stay with your processor.", "Customers pay through your processor's secure checkout. Card and bank details never pass through us."),
             ("Your accounts, your data.", "Built on accounts in your name and documented, so you're never locked in."),
         ],
-        "tools": ["Your CRM or field-service app", "Accounting software", "Payment processor", "Email &amp; text messaging", "Calendar &amp; scheduling"],
+        "tools": ["Your CRM or field-service app (Jobber, QuickBooks, etc.)", "Accounting software", "Payment processor", "Email &amp; text messaging", "Calendar &amp; scheduling"],
         "start_sub": "Most clients start with invoicing and reminders for one service line, then add deposits, progress billing and accounting sync.",
         "faq": [
             ("Will automatic reminders annoy my customers?", "Reminders are friendly, spaced out and written in your voice. You choose how many go out, and they stop the moment a payment comes in."),
             ("Do you handle or store customer payment details?", "No. Customers pay through your own payment processor's secure checkout. We connect the workflow, and card and bank details never pass through us."),
             ("Do I need new accounting or payment software?", "Usually not. We connect to the accounting software and payment processor you already use. If something is missing, we recommend an option that fits your size and budget."),
-            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Any ongoing software or processing fees are billed by those providers to accounts in your name, and we estimate them for you up front, so there are no surprises."),
+            ("What does it cost?", "After the free consultation, you get a fixed price for the pilot. Any ongoing software or processing fees are billed by those providers to accounts in your name, and we estimate them up front, so there are no surprises."),
             ("How quickly can it be running?", "A pilot on one service line typically runs within a few weeks. It runs side by side with your current process before it goes live with customers."),
         ],
         "cta_title": "Get paid faster, without the chasing",
@@ -237,6 +237,11 @@ def text(s):
 
 
 def render(p):
+    home_url = "index-preview.html" if PREVIEW else "/"
+    contact_url = "index-preview.html#contact" if PREVIEW else "/#contact"
+    process_url = "index-preview.html#process" if PREVIEW else "/#process"
+    l2c_url = "index-preview.html#l2c" if PREVIEW else "/#l2c"
+
     url = f"{SITE}/{p['slug']}.html"
     ld = {
         "@context": "https://schema.org",
@@ -254,6 +259,7 @@ def render(p):
                     {"@type": "Country", "name": "United States"},
                 ],
                 "audience": {"@type": "BusinessAudience", "audienceType": "Small and midsize businesses"},
+                "priceRange": "$$",
             },
             {
                 "@type": "BreadcrumbList",
@@ -316,7 +322,7 @@ def render(p):
   <!-- Generated by tools/build-service-pages.py: edit the copy there, not here. -->
   <title>{html.escape(p['title'])}</title>
   <meta name="description" content="{html.escape(p['description'])}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="{'noindex, nofollow' if PREVIEW else 'index, follow, max-image-preview:large'}">
   <link rel="canonical" href="{url}">
   <link rel="icon" href="favicon.ico?v=3" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=3">
@@ -338,22 +344,22 @@ def render(p):
   <a class="skip-link" href="#main">Skip to content</a>
   <nav aria-label="Main Navigation">
     <div class="nav-container">
-      <a href="/" class="brand" aria-label="Agla Consulting home">
+      <a href="{home_url}" class="brand" aria-label="Agla Consulting home">
         <picture><source srcset="agla-footprint-logo-nav.webp" type="image/webp"><img src="agla-footprint-logo-nav.png" alt="Agla Consulting, LLC" width="155" height="52"></picture>
       </a>
-      <a href="/#contact" class="btn-nav">Book a Free Consultation</a>
+      <a href="{contact_url}" class="btn-nav">Book a Free Consultation</a>
     </div>
   </nav>
 
   <main id="main" class="svc">
     <section class="svc-hero">
       <div class="wrap">
-        <p class="crumb"><a href="/">Home</a> / {p['service_name'].replace('&', '&amp;')}</p>
+        <p class="crumb"><a href="{home_url}">Home</a> / {p['service_name'].replace('&', '&amp;')}</p>
         <p class="eyebrow">{p['eyebrow']}</p>
         <h1>{p['h1']}</h1>
         <p class="lead">{p['lead']}</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="/#contact">Book a Free Consultation</a>
+          <a class="btn btn-primary" href="{contact_url}">Book a Free Consultation</a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
         </div>
       </div>
@@ -411,7 +417,7 @@ def render(p):
     <section class="band" aria-labelledby="start-title">
       <div class="wrap">
         <h2 id="start-title">Getting started</h2>
-        <p class="sub">{p['start_sub']} <a href="/#process">See how engagements work</a>.</p>
+        <p class="sub">{p['start_sub']} <a href="{process_url}">See how engagements work</a>.</p>
         <div class="faq">
 {faq}
         </div>
@@ -421,7 +427,7 @@ def render(p):
     <section class="band gray" aria-labelledby="related-title">
       <div class="wrap">
         <h2 id="related-title">Automate the whole Lead-to-Cash lifecycle</h2>
-        <p class="sub">Each service works on its own, and they're designed to hand off to each other. <a href="/#l2c">See the full lifecycle</a>.</p>
+        <p class="sub">Each service works on its own, and they're designed to hand off to each other. <a href="{l2c_url}">See the full lifecycle</a>.</p>
         <div class="related">
 {related}
         </div>
@@ -433,7 +439,7 @@ def render(p):
         <h2 id="cta-title">{p['cta_title']}</h2>
         <p>{p['cta_text']}</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="/#contact">Book a Free Consultation</a>
+          <a class="btn btn-primary" href="{contact_url}">Book a Free Consultation</a>
         </div>
         <p style="margin-top:20px;">Or call <a class="text-link" href="tel:+16363294961">(636) 329-4961</a></p>
       </div>
@@ -441,7 +447,7 @@ def render(p):
   </main>
 
   <footer>
-    <p><a href="/">Home</a> &middot; <a href="/#l2c">Lead-to-Cash</a> &middot; <a href="/#process">How It Works</a> &middot; <a href="/#contact">Contact</a></p>
+    <p><a href="{home_url}">Home</a> &middot; <a href="{l2c_url}">Lead-to-Cash</a> &middot; <a href="{process_url}">How It Works</a> &middot; <a href="{contact_url}">Contact</a></p>
     <p>{svc_footer}</p>
     <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a> &middot; <a href="accessibility.html">Accessibility</a></p>
     <p>&copy; 2026 Agla Consulting LLC &middot; St. Louis-based &middot; Remote nationwide</p>
